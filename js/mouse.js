@@ -4,7 +4,7 @@ var cambio=true;
  $("h3").mouseover(function() {
   $( "#follower" ).css( "transform","scale(1.8)" );
 	 	 /*cambio=false;
-var post= $("h3").position();
+	 var post= $("h3").position();
 	   $( "#follower" ).css( {left:post.left, top:post.top} );*/
 });
 
@@ -32,7 +32,7 @@ $(window).mousemove(function(e){
 
 // cache the selector
 var follower = $("#follower");
-var pointer = $("#pointer");
+//var pointer = $("#pointer");
 var xp = 0, yp = 0;
 var loop = setInterval(function(){
     // change 12 to alter damping higher is slower
@@ -42,5 +42,5 @@ var loop = setInterval(function(){
     follower.css({left:xp, top:yp});
 				}
 
-     pointer.css({left:mouseX-2, top:mouseY+2});
+//     pointer.css({left:mouseX-2, top:mouseY+2});
 }, 30);
