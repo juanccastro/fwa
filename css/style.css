@@ -83,6 +83,7 @@ nav h3:hover , footer h3:hover{
 .left-part,
 .content,
 .bg-part {
+  z-index: 1;
   position: absolute;
   top: 0;
   height: 100%;
@@ -288,6 +289,7 @@ nav h3:hover , footer h3:hover{
 /* REAL SIDEBAR STYLES END */
 /* SECTIONS STYLES */
 .sections {
+	z-index: 1;
   height: 100%;
   -webkit-transition: margin 0.5s;
   transition: margin 0.5s;
@@ -295,6 +297,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .section {
+  z-index: 1;
   position: relative;
   height: 100%;
 }
@@ -364,6 +367,17 @@ nav h3:hover , footer h3:hover{
   will-change: transform;
 }
 
+
+.texts{
+	z-index: 2;
+	top: 34rem;
+  	left: 30rem;
+	position:relative;
+	height: 20px;
+  	overflow: hidden;
+  	width: 300px;
+}
+
 .section-heading,
 .additional-text {
 	
@@ -376,7 +390,7 @@ nav h3:hover , footer h3:hover{
                                   supported by Chrome and Opera */
   display: block;
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   line-height: 1;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -410,13 +424,23 @@ nav h3:hover , footer h3:hover{
 }
 
 .additional-text {
-  top: 34rem;
-  left: 30rem;
+	transition: 0.3s ease; 
+	margin-top: 0em;
+	transition: 0.3s;     
   font-size: 1.3rem;
   font-weight:700;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
+.up{
+margin-top: 0.5em;
+}
+
+.down{
+margin-top: 2em;
+}
+
 
 .bg-part {
   width: 60%;

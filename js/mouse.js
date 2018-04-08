@@ -1,6 +1,19 @@
 var cambio=true;
 
 
+
+ $(".section-heading").mouseover(function() {
+  $( ".up" ).css( "margin-top","-2em" );
+  $( ".down" ).css( "margin-top","0.5em" );
+});
+
+ $(".section-heading").mouseout(function() {
+  $( ".up" ).css( "margin-top","0.5em" );
+  $( ".down" ).css( "margin-top","2em" );
+});
+
+
+
  $("h3").mouseover(function() {
   $( "#follower" ).css( "transform","scale(1.8)" );
 	 	 /*cambio=false;

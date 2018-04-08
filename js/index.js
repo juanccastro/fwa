@@ -8,7 +8,7 @@ $(document).ready(function() {
       $sections = $(".sections"),
       $paginationPage = $(".pagination .page"),
       $paginationTotal = $(".total-pages"),
-      $textStuff = $(".section-heading, .additional-text");
+      $textStuff = $(".section-heading, .texts");
   
   if (pages >= 10) {
     $paginationTotal.text(pages);
@@ -38,7 +38,7 @@ $(document).ready(function() {
     }, time);
     setTimeout(function() {
       // cached selector not working because of newely created clone when moving up more then 2 positions
-      $(".section-heading, .additional-text").css({"margin-top": 0 - (parseInt($(".nav-elem.active").attr("data-page")) - 1) * 100 + "vh"}).hide();
+      $(".section-heading, .texts").css({"margin-top": 0 - (parseInt($(".nav-elem.active").attr("data-page")) - 1) * 100 + "vh"}).hide();
     }, 410);
     setTimeout(function() {
       $textStuff.show();
