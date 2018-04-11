@@ -14,28 +14,31 @@ html, body {
 
 nav{
 	z-index: 2;
-	width: 90%;
-	height: auto;
-	margin: 0 auto;
-	position: relative;
-	 
+	width: 85%;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 2%;
+	
 }
 
 footer{
 	z-index: 2;
-	width: 90%;
-	height: auto;
-	margin: 0 auto;
+	width: 85%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto
 }
 
 .logo,.menu,.foot,.sidebar-hover{
 	position: absolute;
-	margin: 3%;
 	display: inline-block;
-}
 
-.sidebar-hover{
-    margin-right: 3%;
 }
 
 .menu,.sidebar-hover{
@@ -44,7 +47,6 @@ footer{
 
 .foot,.sidebar-hover{
     z-index: 2;
-    bottom: 0;
 }
 
 nav h3, footer h3{
@@ -445,6 +447,7 @@ margin-top: 2em;
 .bg-part {
   width: 60%;
   height: 55%;
+	margin-left: 15%;
 }
 
 
