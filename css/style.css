@@ -20,14 +20,14 @@ nav{
 	left: 0;
 	right: 0;
 	margin: auto;
-	margin-top: 2%;
+	margin-top: 3%;
 	
 }
 
 footer{
 	z-index: 2;
 	width: 85%;
-	height: 50px;
+	height: 70px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -168,6 +168,7 @@ nav h3:hover , footer h3:hover{
 /* END OF SIDEBAR HOVER */
 /* REAL SIDEBAR (OFF-CANVAS MENU) STYLES */
 .sidebar-real {
+	top: 0;
   z-index: 2;
   left: 15rem;
   width: 30rem;
