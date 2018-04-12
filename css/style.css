@@ -457,8 +457,8 @@ margin-top: 2em;
 #follower{
   z-index: 3;
   position: absolute;
-  width:40px;
-  height:40px;
+  width:45px;
+  height:45px;
   border-radius:50px;
   border:0.5px solid #1e1e1e;
   opacity: 0.2;
@@ -474,6 +474,14 @@ margin-top: 2em;
   border-radius:50px;
   background-color: #1e1e1e;
   opacity: 0;
+}
+
+#follower.scale{
+  transform: scale(1.6);
+}
+
+#follower.is-moving {
+  transform: scale(0.8);
 }
 
 .container{

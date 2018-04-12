@@ -1,4 +1,5 @@
 var cambio=true;
+var $cursor = $('#follower');
 
 
 
@@ -13,9 +14,9 @@ var cambio=true;
 });
 
 
-
  $("h3").mouseover(function() {
-  $( "#follower" ).css( "transform","scale(1.8)" );
+  $cursor.addClass('scale');
+	 
 	 	 /*cambio=false;
 	 var post= $("h3").position();
 	   $( "#follower" ).css( {left:post.left, top:post.top} );*/
@@ -23,19 +24,43 @@ var cambio=true;
 
 	
 $( "h3" ).mouseout(function() {
-  $( "#follower" ).css( "transform","scale(1)" );
+       $cursor.removeClass('scale');
 		 cambio=true;
+	
+	
 });
 
  $(window).mousedown(function() {
-  $( "#follower" ).css( "transform","scale(0.7)" );
+  $cursor.addClass('is-moving');
 });
 
  $(window).mouseup(function() {
-  $( "#follower" ).css( "transform","scale(1)" );
+       $cursor.removeClass('is-moving');
 	 	
 });
 
+
+// http://ahrengot.com/tutorials/greensock-javascript-animation
+
+
+function moveCursor(e) {
+  	$cursor.addClass('is-moving');
+	TweenLite.to($cursor, 1.2, {
+    left: e.pageX - 20,
+    top: e.pageY - 20,
+    ease: Power4.easeOut, 
+  });
+  
+  clearTimeout(timer);
+
+   var timer = setTimeout(function() {
+	    $cursor.removeClass('is-moving');
+   }, 300);
+}
+
+$(window).on('mousemove', moveCursor);
+
+/*
 
 var mouseX = 0, mouseY = 0;
 $(window).mousemove(function(e){
@@ -52,8 +77,9 @@ var loop = setInterval(function(){
     xp += (mouseX-20 - xp) / 6;
     yp += (mouseY-20 - yp) / 6;
 		if(cambio){
-    follower.css({left:xp, top:yp});
-				}
+			follower.css({left:xp, top:yp});
+	}
 
 //     pointer.css({left:mouseX-2, top:mouseY+2});
 }, 30);
+*/
