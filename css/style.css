@@ -412,7 +412,7 @@ nav h3:hover , footer h3:hover{
 
 .section-heading {
   top: 35rem;
-  left: 80rem;
+  left: 60rem;
   font-size: 6rem;
   line-height: 1;
   padding: 0 2rem 0rem;
@@ -447,8 +447,8 @@ margin-top: 2em;
 
 
 .bg-part {
-  width: 60%;
-  height: 55%;
+  width: 40%;
+  height:70%;
 	margin-left: 15%;
 	overflow: hidden;
 }
