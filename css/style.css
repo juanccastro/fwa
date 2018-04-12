@@ -463,7 +463,7 @@ margin-top: 2em;
   height:45px;
   border-radius:50px;
   border:0.5px solid #1e1e1e;
-  opacity: 0.2;
+  opacity: 0.4;
   pointer-events: none;
   -webkit-transition:transform 0.5s cubic-bezier(.31,.99,.57,1);
 }
