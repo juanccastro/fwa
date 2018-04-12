@@ -168,8 +168,8 @@ nav h3:hover , footer h3:hover{
 /* END OF SIDEBAR HOVER */
 /* REAL SIDEBAR (OFF-CANVAS MENU) STYLES */
 .sidebar-real {
-	top: 0;
-  z-index: 2;
+	position: fixed;
+  z-index: 4;
   left: 15rem;
   width: 30rem;
   height: 500rem;
@@ -236,7 +236,7 @@ nav h3:hover , footer h3:hover{
 .nav-elem {
   position: relative;
   width: 100%;
-  height: 18.81rem;
+  height: 20rem;
   background-size: cover;
   -webkit-transition: -webkit-transform 0.4s 0.3s;
   transition: -webkit-transform 0.4s 0.3s;
@@ -373,8 +373,8 @@ nav h3:hover , footer h3:hover{
 
 .texts{
 	z-index: 2;
-	top: 34rem;
-  	left: 30rem;
+	top: 42rem;
+  	left: 90rem;
 	position:relative;
 	height: 20px;
   	overflow: hidden;
@@ -401,8 +401,8 @@ nav h3:hover , footer h3:hover{
 }
 .section-heading.not-visible,
 .additional-text.not-visible {
-  -webkit-transform: translateY(-10rem);
-          transform: translateY(-10rem);
+/*  -webkit-transform: translateY(-10rem);
+          transform: translateY(-10rem);*/
   opacity: 0;
   -webkit-transition: opacity 0.2s 0.2s, -webkit-transform 0.4s;
   transition: opacity 0.2s 0.2s, -webkit-transform 0.4s;
@@ -411,8 +411,8 @@ nav h3:hover , footer h3:hover{
 }
 
 .section-heading {
-  top: 26.7rem;
-  left: 15rem;
+  top: 35rem;
+  left: 80rem;
   font-size: 6rem;
   line-height: 1;
   padding: 0 2rem 0rem;
@@ -434,6 +434,7 @@ nav h3:hover , footer h3:hover{
   font-weight:700;
   letter-spacing: 3px;
   text-transform: uppercase;
+	opacity: 1;
 }
 
 .up{
@@ -449,17 +450,19 @@ margin-top: 2em;
   width: 60%;
   height: 55%;
 	margin-left: 15%;
+	overflow: hidden;
 }
 
 
 #follower{
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   width:40px;
   height:40px;
   border-radius:50px;
   border:0.5px solid #1e1e1e;
   opacity: 0.2;
+  pointer-events: none;
   -webkit-transition:transform 0.5s cubic-bezier(.31,.99,.57,1);
 }
 
@@ -480,7 +483,7 @@ margin-top: 2em;
     top:0;
     left:0;
     overflow:hidden;
-	z-index: 0;
+	z-index: 2;
 }
 
 
