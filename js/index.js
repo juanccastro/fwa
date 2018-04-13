@@ -8,7 +8,8 @@ $(document).ready(function() {
       $sections = $(".sections"),
       $paginationPage = $(".pagination .page"),
       $paginationTotal = $(".total-pages"),
-      $textStuff = $(".section-heading, .texts");
+      $textStuff = $(".box, .texts"),
+	  $names = $(".section-heading, .additional-text");
   
   if (pages >= 10) {
     $paginationTotal.text(pages);
@@ -30,20 +31,20 @@ $(document).ready(function() {
   On production, 410 number must be .section-heading transform transition time in miliseconds + 10, but i'm sort of tired of this demo :D
   */
   function timeoutNav(t) {
-    var time = t || 2000;
-    $textStuff.addClass("not-visible");
+    var time = t || 1000;
+    $names.addClass("not-visible");
     setTimeout(function() {
       navigating = false;
       randomDelay();
     }, time);
     setTimeout(function() {
       // cached selector not working because of newely created clone when moving up more then 2 positions
-      $(".section-heading, .texts").css({"margin-top": 0 - (parseInt($(".nav-elem.active").attr("data-page")) - 1) * 100 + "vh"}).hide();
+      $(".box, .texts").css({"margin-top": 0 - (parseInt($(".nav-elem.active").attr("data-page")) - 1) * 100 + "vh"}).hide();
     }, 410);
     setTimeout(function() {
       $textStuff.show();
       $textStuff.css("top");
-      $textStuff.removeClass("not-visible");
+      $names.removeClass("not-visible");
     }, time + 10);
   }
   
@@ -56,11 +57,11 @@ $(document).ready(function() {
   }
   
   function trickyStuff(page) {
-    $(".left-part, .bg-part").css({"transition-duration": "0s", "transition-delay": "0s"});
+    $(".left-part, .bg-part").css({"transition-duration": "1s", "transition-delay": "1s"});
     $(".main").css("top");
     magicStuff(page);
     $(".main").css("top");
-    $(".left-part, .bg-part").css("transition-duration", "0.8s");
+    $(".left-part, .bg-part").css("transition-duration", "1s");
     randomDelay();
   }
   
@@ -162,7 +163,7 @@ $(document).ready(function() {
       setTimeout(function() {
         $fakePage.remove();
         trickyStuff(futurePage);
-      }, 2000);
+      }, 1000);
     } else {
       magicStuff(futurePage);
       timeoutNav();

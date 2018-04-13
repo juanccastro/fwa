@@ -41,6 +41,10 @@ footer{
 
 }
 
+.logo img{
+	width: 20%;
+}
+
 .menu,.sidebar-hover{
     right: 0px;
 }
@@ -235,6 +239,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .nav-elem {
+	margin-top: 10%;
   position: relative;
   width: 100%;
   height: 20rem;
@@ -344,7 +349,8 @@ nav h3:hover , footer h3:hover{
 
 .left-part,
 .bg-part {
-  background-size: cover;
+  margin-top:13vh; 
+    background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
@@ -372,12 +378,21 @@ nav h3:hover , footer h3:hover{
   will-change: transform;
 }
 
+.box{
+	z-index: 2;
+	position:relative;
+	top: 35rem;
+  	left: 60rem;
+	width: 800px;
+	height: 70px;
+	overflow: hidden;
+}
 
 .texts{
 	z-index: 2;
-	top: 42rem;
+	top: 45rem;
   	left: 90rem;
-	position:relative;
+	position:absolute;
 	height: 20px;
   	overflow: hidden;
   	width: 300px;
@@ -385,7 +400,6 @@ nav h3:hover , footer h3:hover{
 
 .section-heading,
 .additional-text {
-	
 	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -403,23 +417,20 @@ nav h3:hover , footer h3:hover{
 }
 .section-heading.not-visible,
 .additional-text.not-visible {
-/*  -webkit-transform: translateY(-10rem);
-          transform: translateY(-10rem);*/
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
   opacity: 0;
-  -webkit-transition: opacity 0.2s 0.2s, -webkit-transform 0.4s;
-  transition: opacity 0.2s 0.2s, -webkit-transform 0.4s;
-  transition: transform 0.4s, opacity 0.2s 0.2s;
-  transition: transform 0.4s, opacity 0.2s 0.2s, -webkit-transform 0.4s;
+  transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
 
+
 .section-heading {
-  top: 35rem;
-  left: 60rem;
   font-size: 6rem;
   line-height: 1;
   padding: 0 2rem 0rem;
   font-weight:600;
 }
+
 .section-heading:hover {
   -webkit-text-stroke: 1.2px #141414;
 	text-stroke: 1.2px #141414;
