@@ -552,6 +552,10 @@ margin-top: 2em;
 	margin: auto;
  }
 
+.media{
+	margin:10% 10%;
+}
+
 .media img{
 	width: 100%;
 }
@@ -568,4 +572,24 @@ margin-top: 2em;
 	font-size: 1.6rem;
   	margin-top: 3%;
 	line-height: 1.875;
+}
+
+.divider{
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+
+.divider img{
+	width: 100%;
+}
+
+.bar-long {
+    height: 10px;
+    background-color: #009ACF;
+    width: 0px;
+    z-index: 1000;
+    position: fixed;
+    top: 50px;
+    left: 0;
 }
