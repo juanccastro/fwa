@@ -598,9 +598,10 @@ svg {
     min-width: 100%;
 }
 
-.hov{
-   clip-path:inset(0px);
-	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
+.hov{ 
+   -webkit-clip-path: inset(0px 0px);
+   clip-path: inset(0px 0px);
+   transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
 }
 
 .hov img{
@@ -610,6 +611,7 @@ svg {
 }
 
 .hov:hover{
+	-webkit-clip-path:inset(18px 20px);
 	clip-path:inset(18px 20px);
 	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
 }
