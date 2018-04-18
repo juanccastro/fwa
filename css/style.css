@@ -15,8 +15,11 @@
 
 html, body {
   font-size: 62.5%;
-  overflow: hidden;
   font-family: "Avenir Next";
+}
+
+.hidden{
+	  overflow: hidden;
 }
 
 nav{
@@ -488,6 +491,15 @@ margin-top: 2em;
   -webkit-transition:transform 0.5s cubic-bezier(.31,.99,.57,1);
 }
 
+svg {
+  z-index: 3;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 90px;
+  width: 90px;
+}
+
 #pointer{
   z-index: 1;
   position : relative;
@@ -512,6 +524,7 @@ margin-top: 2em;
 	 overflow-y:scroll;
 	 width:100%;
 	 height: 100%;
+	
 }
 
 .header{
@@ -575,21 +588,35 @@ margin-top: 2em;
 }
 
 .divider{
+	
 	width: 100%;
-	height: 500px;
 	overflow: hidden;
 }
 
-.divider img{
-	width: 100%;
+.divider video{
+    min-width: 100%;
 }
 
-.bar-long {
-    height: 10px;
-    background-color: #009ACF;
-    width: 0px;
-    z-index: 1000;
-    position: fixed;
-    top: 50px;
-    left: 0;
+.hov{
+   clip-path:inset(0px);
+	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
 }
+
+.hov img{
+	transform: scale(1);
+	vertical-align: middle;
+	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
+}
+
+.hov:hover{
+	clip-path:inset(18px 20px);
+	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
+}
+
+.hov:hover img{
+	transform: scale(1.05);
+}
+
+
+
+

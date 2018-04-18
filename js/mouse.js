@@ -60,17 +60,6 @@ function moveCursor(e) {
 
 $(window).on('mousemove', moveCursor);
 
-
-$(window).scroll(function() {
-
-    // calculate the percentage the user has scrolled down the page
-    var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
-
-    $('.bar-long').css('width', scrollPercent +"%"  );
-});
-
-
-
 /*
 
 var mouseX = 0, mouseY = 0;
