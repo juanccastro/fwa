@@ -22,6 +22,7 @@ html, body {
 	  overflow: hidden;
 }
 
+
 nav{
 	z-index: 2;
 	width: 85%;
@@ -394,7 +395,7 @@ nav h3:hover , footer h3:hover{
 	z-index: 2;
 	position:relative;
 	top: 35rem;
-  	left: 60rem;
+  	left: 45%;
 	width: 800px;
 	height: 70px;
 	overflow: hidden;
@@ -402,8 +403,8 @@ nav h3:hover , footer h3:hover{
 
 .texts{
 	z-index: 2;
-	top: 45rem;
-  	left: 90rem;
+	top: 43rem;
+  	left: 60%;
 	position:absolute;
 	height: 20px;
   	overflow: hidden;
