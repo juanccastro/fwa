@@ -486,10 +486,9 @@ margin-top: 2em;
   width:45px;
   height:45px;
   border-radius:50px;
-  border:0.5px solid #1e1e1e;
+  border:1px solid black;
   opacity: 0.4;
   pointer-events: none;
-  mix-blend-mode: multiply;
   -webkit-transition:transform 0.5s cubic-bezier(.31,.99,.57,1);
 }
 
