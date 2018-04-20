@@ -593,8 +593,14 @@ svg {
 }
 
 .divider{
-	
 	width: 100%;
+	overflow: hidden;
+    height: 90%;
+}
+
+.divider img{
+	width: 100%;
+    
 	overflow: hidden;
 }
 
