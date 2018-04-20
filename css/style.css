@@ -574,11 +574,15 @@ svg {
 	width: 100%;
 }
 
+.cont-media{
+	width: 100%;
+}
+
 .text-block{
 	width: 60%;
 	left: 0;
 	right: 0;
-	margin: auto;
+	margin: 10% auto;
 }
 
 .text-block .description{
@@ -598,9 +602,9 @@ svg {
     min-width: 100%;
 }
 
-.hov{ 
-   -webkit-clip-path: inset(0px 0px);
-   clip-path: inset(0px 0px);
+.hov .cont-media{ 
+   -webkit-clip-path: inset(0% 0%);
+   clip-path: inset(0% 0%);
    transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
 }
 
@@ -610,14 +614,14 @@ svg {
 	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
 }
 
-.hov:hover{
-	-webkit-clip-path:inset(18px 20px);
-	clip-path:inset(18px 20px);
+.hov:hover .cont-media{
+	-webkit-clip-path: inset(50px 50px);
+	clip-path:inset(4% 4%);
 	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
 }
 
 .hov:hover img{
-	transform: scale(1.05);
+	transform: translate3d(1.05,0,0);
 }
 
 
