@@ -17,6 +17,7 @@
 
 <body id="barba-wrapper" class="hidden">
 
+    	<div class="barba-container">
 
 		<nav>
 				<div class="logo">
@@ -33,7 +34,6 @@
 			<div id="pointer"></div>
         	<div id="follower"></div>
 		</div>-->
-    	<div class="barba-container">
 
   <div class="main">
   
@@ -135,7 +135,38 @@
 
     <script  src="js/index.js"></script>
     <script  src="js/mouse.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	
+	<script>
+		// Changing the defaults
+			window.sr = ScrollReveal({ reset: true });
 
+		// Customizing a reveal set
+			sr.reveal('.hed', 
+			
+			   {scale: 0,
+				duration: 600,
+				container: document.querySelector('.case'),
+				mobile: false, 
+				viewFactor: 0.2,
+				
+		  },100);
+		
+		sr.reveal('.foo', 
+			
+			   {scale: 0,
+				origin: 'bottom',
+				duration: 900,
+				container: document.querySelector('.case'),
+				mobile: false, 
+				useDelay: 'onload',
+				viewFactor: 0.2,
+		  });
+		
+		
+			
+		
+	</script>
 	<script>
 		$('document').ready(function(){
 			var transEffect = Barba.BaseTransition.extend({
