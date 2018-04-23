@@ -15,12 +15,11 @@
 
 </head>
 
-<body id="barba-wrapper" class="hidden">
+<body class="hidden">
 
 	 
 	 
  <div id="follower"></div>
- <div class="barba-container">
 
 		<nav>
 				<div class="logo">
@@ -101,7 +100,6 @@
     </div>
     
   </div>
-</div>
 	
 	
 	
@@ -134,57 +132,6 @@
     <script  src="js/index.js"></script>
     <script  src="js/mouse.js"></script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-	
-	<script>
-		$('document').ready(function(){
-			var transEffect = Barba.BaseTransition.extend({
-                start: function(){
-                  this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
-                },
-                fadeInNewcontent: function(nc) {
-                  nc.hide();
-                  var _this = this;
-                  $(this.oldContainer).fadeOut(1000).promise().done(() => {
-                    nc.css('visibility','visible');
-                    nc.fadeIn(1000, function(){
-                      _this.done();
-                    })
-                  });
-                }
-            });
-            Barba.Pjax.getTransition = function() {
-              return transEffect;
-            }
-			
-			Barba.Pjax.start();
-		});
-
-		
-		// Changing the defaults
-			window.sr = ScrollReveal({ reset: true });
-
-		// Customizing a reveal set
-			sr.reveal('.hed', 
-			
-			   {scale: 0,
-				duration: 600,
-				container: document.querySelector('.case'),
-				mobile: false, 
-				viewFactor: 0.2,
-				
-		  },100);
-		
-		sr.reveal('.foo', 
-			
-			   {scale: 0,
-				origin: 'bottom',
-				duration: 900,
-				container: document.querySelector('.case'),
-				mobile: false, 
-				useDelay: 'onload',
-				viewFactor: 0.2,
-		  });
-	</script>
 
 </body>
 
