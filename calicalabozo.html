@@ -166,7 +166,11 @@
 				viewFactor: 0.2,
 		  });
 	</script>
-	
+	<script>
+window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});
+	</script>
 	
 
 

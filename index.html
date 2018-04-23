@@ -132,6 +132,12 @@
     <script  src="js/index.js"></script>
     <script  src="js/mouse.js"></script>
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	
+	<script>
+window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});
+	</script>
 
 </body>
 
