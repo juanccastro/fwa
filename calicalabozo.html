@@ -34,8 +34,7 @@
 					<h3>about</h3>
 				</div>
 		</nav>
-	<div class="barba-wrapper">
-    <div class="case-main barba-container">
+    <div class="case-main">
 <!-- <div id="pointer"></div>-->
 		 
 		<div class="case">
@@ -207,7 +206,6 @@
             
    		</div>
 		</div>
-		</div>
 	
 										
 		<footer>
@@ -220,34 +218,12 @@
   		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
 		
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-        <script  src="js/barba.min.js"></script>
 
     	<script  src="js/mouse.js"></script>
     
          
 
 	<script>
-		$('document').ready(function(){
-            var transEffect = Barba.BaseTransition.extend({
-                start: function(){
-                  this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
-                },
-                fadeInNewcontent: function(nc) {
-                  nc.hide();
-                  var _this = this;
-                  $(this.oldContainer).fadeOut(1000).promise().done(() => {
-                    nc.css('visibility','visible');
-                    nc.fadeIn(1000, function(){
-                      _this.done();
-                    })
-                  });
-                }
-            });
-            Barba.Pjax.getTransition = function() {
-              return transEffect;
-            }
-            Barba.Pjax.start();
-          });
 		
 		// Changing the defaults
 			window.sr = ScrollReveal({ reset: false });
