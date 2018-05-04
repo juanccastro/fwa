@@ -154,6 +154,11 @@
     this.done();
   }
 });
+		
+		Barba.Pjax.getTransition = function() {
+  return HideShowTransition;
+};
+		
 		$('body').toggleClass('loaded');
 		
 		
