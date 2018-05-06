@@ -21,10 +21,7 @@ $(document).ready(function() {
   Sets random transition-delay for blocks between 0.4 and 1.2 seconds on every call
   */
   function randomDelay() {
-    $(".left-part").css("transition-delay", "1s");
-    for (var i = 1; i <= pages; i++) {
-      $(".bg-part:nth-child("+i+")").css("transition-delay", "1s");
-    }
+   
   }
   
   /* Async hell, with hardcoded numbers.
