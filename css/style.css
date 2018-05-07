@@ -431,10 +431,10 @@ nav h3:hover , footer h3:hover{
   opacity: 1;
   width: 10%;
   right: 61%;
-  height: 2px;
+  height: 1.5px;
   background-color: black;
   -webkit-transition: all 0.4s ease;
-	  will-change: transform, opacity;
+  will-change: transform, opacity;
   border: none; /*on supprime le style par défaut*/
 }
 
@@ -474,7 +474,7 @@ nav h3:hover , footer h3:hover{
 .section-heading:hover{
   -webkit-text-stroke: 1.2px #141414;
 	text-stroke: 1.2px #141414;
-	 -webkit-transition: all 0.3s ease;
+  transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
     color: rgb(0,0,0,0);
 	cursor: pointer;
 }
@@ -488,7 +488,7 @@ nav h3:hover , footer h3:hover{
     letter-spacing: 3px;
     text-transform: uppercase;
 	opacity: 1;
-	transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
+	transition: all 0.4s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
 
 .up{

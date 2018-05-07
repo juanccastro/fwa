@@ -38,7 +38,7 @@ $(document).ready(function() {
     setTimeout(function() {
       // cached selector not working because of newely created clone when moving up more then 2 positions
       $(".box, .texts, .linea").css({"margin-top": 0 - (parseInt($(".nav-elem.active").attr("data-page")) - 1) * 100 + "vh"}).hide();
-    }, 510);
+    }, 520);
     setTimeout(function() {
       $textStuff.show();
       $textStuff.css("top");
