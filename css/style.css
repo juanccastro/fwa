@@ -276,6 +276,7 @@ nav h3:hover , footer h3:hover{
           transform: translateX(-100%);
   cursor: pointer;
 }
+
 .nav-elem:after {
   content: "";
   position: absolute;
@@ -289,6 +290,7 @@ nav h3:hover , footer h3:hover{
   transition: background 0.2s;
   will-change: background;
 }
+
 .nav-elem:hover:after {
   background: transparent;
 }
@@ -339,7 +341,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .section.section-2 .bg-part {
-   background-image: url("../imgs/bg-project-3.png");
+  background-image: url("../imgs/cali_port.jpg");
 
 }
 
@@ -349,7 +351,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .section.section-4 .bg-part {
-  background-image: url("../imgs/bg-project-4.png");
+  background-image: url("../imgs/cali_port.jpg");
 }
 
 /*
@@ -403,21 +405,37 @@ nav h3:hover , footer h3:hover{
 .box{
 	z-index: 2;
 	position:relative;
-	top: 35rem;
-  	left: 45%;
-	width: 800px;
-	height: 70px;
+	top: 33rem;
+  	left: 0;
+	margin: 0 auto;
+	width: 1200px;
+	height: 100px;
 	overflow: hidden;
 }
 
 .texts{
 	z-index: 2;
 	top: 43rem;
-  	left: 60%;
+	margin: 0 auto;
+	left: 40%;
 	position:absolute;
 	height: 20px;
   	overflow: hidden;
   	width: 300px;
+}
+
+.linea{
+  z-index: 5;
+  position: absolute;
+  top: 44rem;
+  opacity: 1;
+  width: 10%;
+  right: 61%;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: all 0.4s ease;
+	  will-change: transform, opacity;
+  border: none; /*on supprime le style par défaut*/
 }
 
 .section-heading,
@@ -433,27 +451,27 @@ nav h3:hover , footer h3:hover{
   position: absolute;
   z-index: 5;
   line-height: 1;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
   will-change: transform, opacity;
 }
+
 .section-heading.not-visible,
-.additional-text.not-visible {
+.additional-text.not-visible,
+.linea.not-visible{
   -webkit-transform: translateY(10rem);
           transform: translateY(10rem);
-  opacity: 0;
   transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
 
-
 .section-heading {
-  font-size: 6rem;
+  font-size: 10rem;
   line-height: 1;
   padding: 0 2rem 0rem;
   font-weight:600;
 }
 
-.section-heading:hover {
+.section-heading:hover{
   -webkit-text-stroke: 1.2px #141414;
 	text-stroke: 1.2px #141414;
 	 -webkit-transition: all 0.3s ease;
@@ -465,11 +483,12 @@ nav h3:hover , footer h3:hover{
 	transition: 0.3s ease; 
 	margin-top: 0em;
 	transition: 0.3s;     
-  font-size: 1.3rem;
-  font-weight:700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight:700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 	opacity: 1;
+	transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
 
 .up{
@@ -479,7 +498,6 @@ margin-top: 0.5em;
 .down{
 margin-top: 2em;
 }
-
 
 .bg-part {
   width: 12.5%;
