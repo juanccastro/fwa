@@ -109,6 +109,15 @@ nav h3:hover , footer h3:hover{
 }
 
 
+.about-main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+/*  background: #e7e7e7;*/
+  background: black;
+	z-index: 0;
+}
+
 .sidebar-real,
 .left-part,
 .content,
@@ -415,7 +424,7 @@ nav h3:hover , footer h3:hover{
 
 .texts{
 	z-index: 2;
-	top: 43rem;
+	top: 44rem;
 	margin: 0 auto;
 	left: 40%;
 	position:absolute;
@@ -427,7 +436,7 @@ nav h3:hover , footer h3:hover{
 .linea{
   z-index: 5;
   position: absolute;
-  top: 44rem;
+  top: 45rem;
   opacity: 1;
   width: 10%;
   right: 61%;
@@ -467,8 +476,7 @@ nav h3:hover , footer h3:hover{
 .section-heading {
   font-size: 10rem;
   line-height: 1;
-  padding: 0 2rem 0rem;
-  font-weight:600;
+   font-weight:600;
 }
 
 .section-heading:hover{
@@ -608,6 +616,9 @@ svg {
 	position: relative;
 }
 
+.white{
+	color: white;
+}
 
 .case-title{
   font-size: 6rem;
