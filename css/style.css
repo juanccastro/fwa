@@ -426,7 +426,7 @@ nav h3:hover , footer h3:hover{
 	z-index: 2;
 	top: 44rem;
 	margin: 0 auto;
-	left: 40%;
+	left: 20%;
 	position:absolute;
 	height: 20px;
   	overflow: hidden;
@@ -439,7 +439,7 @@ nav h3:hover , footer h3:hover{
   top: 45rem;
   opacity: 1;
   width: 10%;
-  right: 61%;
+  right: 81%;
   height: 1.5px;
   background-color: black;
   -webkit-transition: all 0.4s ease;
@@ -460,7 +460,7 @@ nav h3:hover , footer h3:hover{
   position: absolute;
   z-index: 5;
   line-height: 1;
-  -webkit-transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
   transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
   will-change: transform, opacity;
 }
@@ -477,12 +477,14 @@ nav h3:hover , footer h3:hover{
   font-size: 10rem;
   line-height: 1;
    font-weight:600;
+	 -webkit-text-stroke: 1.2px #141414;
+	text-stroke: 1.2px #141414;
 }
 
 .section-heading:hover{
   -webkit-text-stroke: 1.2px #141414;
 	text-stroke: 1.2px #141414;
-  transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
     color: rgb(0,0,0,0);
 	cursor: pointer;
 }
@@ -510,7 +512,7 @@ margin-top: 2em;
 .bg-part {
   width: 12.5%;
   height:70%;
-  margin-left: 15%;
+  margin-left: 20%;
   overflow: hidden;
 }
 
