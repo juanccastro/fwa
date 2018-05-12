@@ -565,6 +565,10 @@ margin-top: 2em;
   -webkit-transition:transform 0.5s cubic-bezier(.31,.99,.57,1);
 }
 
+.whitemouse{
+	  border:1px solid white !important;
+}
+
 svg {
   z-index: 3;
   position: absolute;
@@ -707,23 +711,26 @@ svg {
 .hov .cont-media{ 
    -webkit-clip-path: inset(0% 0%);
    clip-path: inset(0% 0%);
-   transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
+   transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
 }
 
 .hov img{
+	z-index: 2;
 	transform: scale(1);
 	vertical-align: middle;
-	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
 }
 
 .hov:hover .cont-media{
 	-webkit-clip-path: inset(50px 50px);
 	clip-path:inset(4% 4%);
-	transition: all .4s cubic-bezier(.72,.16,.345,.875)!important;
+	transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
 }
 
 .hov:hover img{
-	transform: translate3d(1.05,0,0);
+	transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+	transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
 }
 
 .footer .container{
