@@ -610,11 +610,10 @@ svg {
 	 overflow-y:scroll;
 	 width:100%;
 	 height: 100%;
-      
 }
 
 .header{
-	width: 60%;
+	width: 85%;
 	height: 40%;
 	left: 0;
 	right: 0;
@@ -656,7 +655,7 @@ svg {
 }
 
  .container{
-	width: 60%;
+	width: 85%;
 	left: 0;
 	right: 0;
 	margin: 10% auto;
