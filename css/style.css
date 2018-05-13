@@ -383,7 +383,7 @@ nav h3:hover , footer h3:hover{
 .left-part,
 .bg-part {
   margin-top:13vh; 
-    background-size: cover;
+    background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-transition: margin 1s  cubic-bezier(0, 0.5, 0.15, 1);
@@ -412,19 +412,18 @@ nav h3:hover , footer h3:hover{
 .box{
 	z-index: 2;
 	position:relative;
-	top: 33rem;
-  	left: 35%;
+	top: 43rem;
 	margin: 0 auto;
-	width: 1200px;
+	width: 800px;
 	height: 100px;
 	overflow: hidden;
 }
 
 .texts{
 	z-index: 2;
-	top: 44rem;
+	top: 55rem;
 	margin: 0 auto;
-	left: 85%;
+	left: 70%;
 	position:absolute;
 	height: 20px;
   	overflow: hidden;
@@ -434,13 +433,13 @@ nav h3:hover , footer h3:hover{
 .linea{
   z-index: 5;
   position: absolute;
-  top: 45rem;
+  top: 56rem;
   opacity: 1;
   width: 10%;
-  right: 17%;
+  right: 31%;
   height: 1.5px;
   background-color: black;
-  -webkit-transition: all 0.4s ease;
+  	-webkit-transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
   will-change: transform, opacity;
   border: none; /*on supprime le style par défaut*/
 }
@@ -472,6 +471,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .section-heading {
+  right: 0;
   font-size: 10rem;
   line-height: 1;
   font-weight:600;
@@ -549,6 +549,15 @@ margin-top: 2em;
 }
 .bg-part:nth-child(5) {
   left: 50%;
+}
+.bg-part:nth-child(6) {
+  left: 62.5%;
+}
+.bg-part:nth-child(7) {
+  left: 75%;
+}
+.bg-part:nth-child(8) {
+  left: 87.5%;
 }
 
 
