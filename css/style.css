@@ -454,13 +454,13 @@ nav h3:hover , footer h3:hover{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
-  display: block;
-  position: absolute;
-  z-index: 5;
-  line-height: 1;
-  -webkit-transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
-  transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
-  will-change: transform, opacity;
+  	display: block;
+  	position: absolute;
+	z-index: 5;
+  	line-height: 1;
+  	-webkit-transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  	transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  	will-change: transform, opacity;
 }
 
 .section-heading.not-visible,
@@ -474,15 +474,16 @@ nav h3:hover , footer h3:hover{
 .section-heading {
   font-size: 10rem;
   line-height: 1;
-   font-weight:600;
-	 -webkit-text-stroke: 1.2px #141414;
-	text-stroke: 1.2px #141414;
+  font-weight:600;
+  -webkit-text-stroke: 1.2px #141414;
+  text-stroke: 1.2px #141414;
+  transition: all 0.4s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
 
 .section-heading:hover{
   -webkit-text-stroke: 1.2px #141414;
 	text-stroke: 1.2px #141414;
-  transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
+  transition: all 0.4s cubic-bezier(0.7, 0.18, 0.15, 1);
     color: rgb(0,0,0,0);
 	cursor: pointer;
 }
