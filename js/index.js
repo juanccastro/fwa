@@ -51,14 +51,17 @@ $(document).ready(function() {
     navigating = true;
     var calculatedMargin = 13 - (curPage - 1) * 100;
     $(".bg-part, .left-part").css("margin-top", calculatedMargin +"vh"); 
+	
+	var calculatedMargin = 0 - (curPage - 1) * 100;
+    $(".color").css("margin-top", calculatedMargin +"vh"); 
   }
   
   function trickyStuff(page) {
-    $(".left-part, .bg-part").css({"transition-duration": "1s", "transition-delay": "1.5s"});
+    $(".left-part, .bg-part, .color").css({"transition-duration": "1s", "transition-delay": "1.5s"});
     $(".main").css("top");
     magicStuff(page);
     $(".main").css("top");
-    $(".left-part, .bg-part").css("transition-duration", "1s");
+    $(".left-part, .bg-part, .color").css("transition-duration", "1s");
     randomDelay();
   }
   

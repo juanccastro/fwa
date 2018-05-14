@@ -121,6 +121,7 @@ nav h3:hover , footer h3:hover{
 .sidebar-real,
 .left-part,
 .content,
+.color,
 .bg-part {
   z-index: 1;
   position: absolute;
@@ -351,7 +352,6 @@ nav h3:hover , footer h3:hover{
 
 .section.section-2 .bg-part {
   background-image: url("../imgs/clothe_gold.jpg");
-
 }
 
 .section.section-3 .bg-part {
@@ -360,6 +360,22 @@ nav h3:hover , footer h3:hover{
 
 .section.section-4 .bg-part {
   background-image: url("../imgs/puerto.jpg");
+}
+
+.section.section-1 .color {
+  background-color: #b58b6d;
+}
+
+.section.section-2 .color {
+  background-color: #6db2aa;
+}
+
+.section.section-3 .color {
+  background-color: #a26daf;
+}
+
+.section.section-4 .color {
+  background-color: #6d71af;
 }
 
 /*
@@ -383,7 +399,7 @@ nav h3:hover , footer h3:hover{
 .left-part,
 .bg-part {
   margin-top:13vh; 
-    background-size: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-transition: margin 1s  cubic-bezier(0, 0.5, 0.15, 1);
@@ -507,6 +523,15 @@ margin-top: 0.5em;
 .down{
 margin-top: 2em;
 }
+
+.color{
+	z-index: -1;
+   width: 40%;
+  height:100%;
+	-webkit-transition: margin 1s  cubic-bezier(0, 0.5, 0.15, 1);
+  transition: margin 1s  cubic-bezier(0.7, 0.18, 0.15, 1);
+  will-change: margin;
+ }
 
 .bg-part {
   width: 12.5%;
@@ -797,6 +822,16 @@ svg {
 	font-weight:600;
 	color: white;
 }
+
+.photo{
+	height: 600;
+	overflow: hidden;
+}
+
+
+
+
+
 
 
 
