@@ -634,16 +634,15 @@ svg {
 
 .case-title{
   font-size: 6rem;
-  line-height: 1;
   font-weight:600;
+  line-height: 1.25;
 }
 
 .description-begin{
 	height: auto;
 	width: auto;
 	font-size: 1.5rem;
-  	margin-top: 8%;
-	vertical-align: top; 
+ 	vertical-align: top; 
 	line-height: 1.875;
 }
 
@@ -668,8 +667,7 @@ svg {
 }
  
 .text-block-role{
-	margin-left: 9%;
-	width: 20%;
+ 	width: 20%;
 	display: inline-block;
 	vertical-align: top; 
 }
@@ -682,7 +680,7 @@ svg {
  }
 
 .media{
- 	margin:10% 0 20% 0;
+ 	margin:10% 0 5% 0;
 }
 
 .media img{
@@ -785,6 +783,21 @@ svg {
     color: rgb(0,0,0,0);
 	cursor: pointer;
 }
+
+/* 				ABOUT PAGE				*/
+
+
+.line-about{
+	margin-top: 5em;
+    margin-bottom: 5em;
+	border-width: 0.5px;
+}
+
+
+
+
+
+
 
 .animate-in {
     -webkit-animation: fadeIn .5s ease-in;
