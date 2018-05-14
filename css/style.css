@@ -614,8 +614,7 @@ svg {
 
 .header{
 	width: 85%;
-	height: 45%;
-	left: 0;
+ 	left: 0;
 	right: 0;
 	margin: auto;
 	margin-top: 20%;
@@ -640,8 +639,11 @@ svg {
 }
 
 .description-begin{
+	height: auto;
+	width: auto;
 	font-size: 1.5rem;
   	margin-top: 8%;
+	vertical-align: top; 
 	line-height: 1.875;
 }
 
@@ -654,6 +656,7 @@ svg {
 }
 
 .textcont{
+	height: auto;
   margin-top: 6%;	
   width: 100%;
 }
@@ -661,13 +664,14 @@ svg {
 .text-block-case{
 	width: 40%;
 	display: inline-block;
-	vertical-align: top; /* here */
+	vertical-align: top; 
 }
+ 
 .text-block-role{
-	vertical-align: top; /* here */
 	margin-left: 9%;
 	width: 20%;
 	display: inline-block;
+	vertical-align: top; 
 }
 
  .container{
@@ -678,7 +682,7 @@ svg {
  }
 
 .media{
-	margin:10% 0 20% 0;
+ 	margin:10% 0 20% 0;
 }
 
 .media img{
