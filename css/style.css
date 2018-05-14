@@ -643,6 +643,11 @@ svg {
 	right: 0;
 	margin: auto;
 	margin-top: 20%;
+	margin-bottom: 10%;
+}
+
+.margin{
+	margin-left: 5%;
 }
 
 .footer{
@@ -672,9 +677,10 @@ svg {
 }
 
 .category{
+	margin-bottom: 3%;
   font-size: 1.1rem;
   font-weight:700;
-  width: 20%;
+  width: 100%;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
