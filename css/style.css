@@ -793,7 +793,10 @@ svg {
 	border-width: 0.5px;
 }
 
-
+.underline{
+	font-weight:600;
+	color: white;
+}
 
 
 
