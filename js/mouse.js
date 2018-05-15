@@ -12,7 +12,7 @@ var $cursor = $('#follower');
  $(".section-heading").mouseout(function() {
   $( ".up" ).css( "margin-top","0.5em" );
   $( ".down" ).css( "margin-top","2em" );
-  $( ".linea" ).css( "width","10%");
+  $( ".linea" ).css( "width","8%");
 });
 
 
