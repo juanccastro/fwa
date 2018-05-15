@@ -600,6 +600,7 @@ margin-top: 2em;
 
 .whitemouse{
 	  border:1px solid white !important;
+	  opacity: 0.8 !important;
 }
 
 svg {
