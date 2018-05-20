@@ -676,8 +676,7 @@ svg {
 
 .description-begin{
 	height: auto;
-	width: auto;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
  	vertical-align: top; 
 	line-height: 1.875;
 }
@@ -693,13 +692,12 @@ svg {
 }
 
 .textcont{
-	height: auto;
   margin-top: 6%;	
   width: 100%;
 }
 
 .text-block-case{
-	width: 40%;
+	width: 49%;
 	display: inline-block;
 	vertical-align: top; 
 }
@@ -825,6 +823,7 @@ svg {
 /* 				ABOUT PAGE				*/
 
 
+
 .line-about{
 	margin-top: 10em;
     margin-bottom: 10em;
@@ -836,17 +835,39 @@ svg {
 	color: white;
 }
 
-.photo{
-	height: 600;
-	overflow: hidden;
+.about{
+	margin-left: 40%;
 }
 
+.photo{
+	margin: 0;
+	height: 100%;
+	width: 40%;
+	position: fixed;
+	overflow: hidden;
+	background-image: url(../imgs/flag.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	z-index: 0;
+}
 
+.margen{
+	margin: 30% 0 30% 0;
+}
+.container-about{
+ 	width: 100%;
+ 	display: inline-block;
+ }
 
-
-
-
-
+.about-title{
+   z-index: 2;
+  font-size: 4rem;
+	width: 50%;
+  line-height: 1.5;
+  -webkit-text-stroke: 0.6px white;
+	text-stroke: 0.6px white;
+  color: rgb(0,0,0,0);
+}
 
 
 
