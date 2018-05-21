@@ -9,6 +9,7 @@ $(document).ready(function() {
       $paginationPage = $(".pagination .page"),
       $paginationTotal = $(".total-pages"),
       $textStuff = $(".box, .texts, .linea"),
+      $lines = $(".linea"),
 	  $names = $(".section-heading, .additional-text");
   
   if (pages >= 10) {
@@ -31,6 +32,7 @@ $(document).ready(function() {
   function timeoutNav(t) {
     var time = t || 1500;
     $names.addClass("not-visible");
+    $lines.addClass("not-visible");
     setTimeout(function() {
       navigating = false;
       randomDelay();
@@ -38,11 +40,12 @@ $(document).ready(function() {
     setTimeout(function() {
       // cached selector not working because of newely created clone when moving up more then 2 positions
       $(".box, .texts, .linea").css({"margin-top": 0 - (parseInt($(".nav-elem.active").attr("data-page")) - 1) * 100 + "vh"}).hide();
-    }, 500);
+    }, 900);
     setTimeout(function() {
       $textStuff.show();
       $textStuff.css("top");
       $names.removeClass("not-visible");
+      $lines.removeClass("not-visible");
     }, time + 10);
   }
   
@@ -57,7 +60,7 @@ $(document).ready(function() {
   }
   
   function trickyStuff(page) {
-    $(".left-part, .bg-part, .color").css({"transition-duration": "1s", "transition-delay": "1.5s"});
+    $(".left-part, .bg-part, .color").css({"transition-duration": "1.3s", "transition-delay": "1s"});
     $(".main").css("top");
     magicStuff(page);
     $(".main").css("top");
