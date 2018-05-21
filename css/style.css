@@ -407,8 +407,8 @@ nav h3:hover , footer h3:hover{
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-transition: margin 1.3s cubic-bezier(.68,.01,.33,.99);
-  transition: margin 1.3s  cubic-bezier(.68,.01,.33,.99);
+  -webkit-transition: margin 1s cubic-bezier(.68,.01,.33,.99);
+  transition: margin 1s  cubic-bezier(.68,.01,.33,.99);
   will-change: margin;
 }
 
@@ -478,8 +478,8 @@ nav h3:hover , footer h3:hover{
   	position: absolute;
 	z-index: 5;
   	line-height: 1;
-  	-webkit-transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
-  	transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  	-webkit-transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
+  	transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
   	will-change: transform, opacity;
 }
 
@@ -488,7 +488,7 @@ nav h3:hover , footer h3:hover{
 .linea.not-visible{
   -webkit-transform: translateY(10rem);
           transform: translateY(10rem);
-  transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
 
 .section-heading {
