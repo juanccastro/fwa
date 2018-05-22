@@ -844,7 +844,7 @@ svg {
 .divider{
 	width: 100%;
 	overflow: hidden;
-    height: 65%;
+    height: 100%;
 }
 
 .divider img{
@@ -923,7 +923,7 @@ svg {
 }
 
 .about{
-	margin-left: 40%;
+	margin-left: 50%;
 }
 
 .photo{
@@ -947,16 +947,16 @@ svg {
  }
 
 .about-title{
-	margin-top: 5%;
+	margin-left: 20%;
+	margin-top: 15%;
     z-index: 2;
     font-size: 4rem;
-	width: 50%;
+	width: 55%;
     line-height: 1.5;
     -webkit-text-stroke: 0.6px white;
 	text-stroke: 0.6px white;
     color: rgb(0,0,0,0);
 }
-
 
 
 .animate-in {
