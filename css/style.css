@@ -798,11 +798,15 @@ svg {
  }
 
 .media{
- 	margin:10% 0 5% 0;
+	width: 90%;
+	height: 100%;
+ 	vertical-align: middle;
+	margin: 10% auto;
+
 }
 
 .media img{
-	width: 100%;
+ 	width: 100%;
 }
 
 .cont-media{
@@ -942,13 +946,14 @@ svg {
  }
 
 .about-title{
-   z-index: 2;
-  font-size: 4rem;
+	margin-top: 5%;
+    z-index: 2;
+    font-size: 4rem;
 	width: 50%;
-  line-height: 1.5;
-  -webkit-text-stroke: 0.6px white;
+    line-height: 1.5;
+    -webkit-text-stroke: 0.6px white;
 	text-stroke: 0.6px white;
-  color: rgb(0,0,0,0);
+    color: rgb(0,0,0,0);
 }
 
 
