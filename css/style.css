@@ -864,8 +864,7 @@ svg {
 .divider{
 	width: 100%;
 	overflow: hidden;
-    height: 100%;
-}
+ }
 
 .divider img{
 	width: 100%;
@@ -942,7 +941,7 @@ svg {
 }
 
 .about{
-	margin-left: 40%;
+	margin-left: 42%;
 }
 
 .photo{
