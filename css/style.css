@@ -764,19 +764,24 @@ svg {
 }
 
 .description-about{
+	position: relative;
 	height: auto;
 	font-size: 1.3rem;
  	vertical-align: top; 
-	line-height: 1.875;
+	line-height:2.5;
 }
 
 .contact{
-	height: auto;
-	font-size: 2.3rem;
-	font-weight: 600;
+ 	font-size: 3rem;
+	font-weight: 700;
  	vertical-align: top; 
-	line-height: 1.875;
 }
+
+.contact a {
+	color: white;
+    text-decoration: none;
+}
+
 
 .category{
   margin-top: 3%;
@@ -949,12 +954,11 @@ svg {
 	background-image: url(../imgs/flag.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
-	z-index: -1;
 }
 
 .margen{
-	margin: 30% 0 30% 0;
-}
+	margin-top: 30%;
+ }
 .container-about{
  	width: 100%;
  	display: inline-block;
