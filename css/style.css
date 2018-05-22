@@ -910,7 +910,6 @@ svg {
 /* 				ABOUT PAGE				*/
 
 
-
 .line-about{
 	margin-top: 10em;
     margin-bottom: 10em;
@@ -935,7 +934,7 @@ svg {
 	background-image: url(../imgs/flag.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
-	z-index: 0;
+	z-index: -1;
 }
 
 .margen{
