@@ -6,11 +6,12 @@ $(document).ready(function() {
       curPage = 1,
       pages = $(".section").length,
       $sections = $(".sections"),
+      $scroller = $("#scroller"),
       $paginationPage = $(".pagination .page"),
       $paginationTotal = $(".total-pages"),
       $textStuff = $(".box, .texts, .linea"),
       $lines = $(".linea"),
-	  $names = $(".section-heading, .additional-text");
+ 	  $names = $(".section-heading, .additional-text");
   
   if (pages >= 10) {
     $paginationTotal.text(pages);
@@ -57,6 +58,17 @@ $(document).ready(function() {
 	
 	var calculatedMargin = 0 - (curPage - 1) * 100;
     $(".color").css("margin-top", calculatedMargin +"vh"); 
+	  
+	  if(curPage == 1){
+		  $scroller.css("margin-top", "0px"); 
+	  }else if(curPage == 2){
+		  $scroller.css("margin-top", "-100px"); 
+	  }else if(curPage == 3){
+		  $scroller.css("margin-top", "-200px"); 
+	  }else if(curPage == 4){
+		  $scroller.css("margin-top", "-300px"); 
+	  }
+	  
   }
   
   function trickyStuff(page) {
