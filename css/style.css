@@ -751,10 +751,25 @@ svg {
 }
 
 .case-title{
-  font-size: 8rem;
-  font-weight:600;
-  line-height: 1.25;
+   font-size:8vw;
+   font-weight:600;
+   line-height: 1.25;
+	width: 100%;
 }
+
+.nav-up {
+    top: -120px;
+}
+
+header {
+	z-index: 2;
+	height: 120px;
+    position: fixed;
+    top: 0;
+    transition: top 0.6s cubic-bezier(.72,.16,.345,.875) !important;
+    width: 100%;
+	background-color: #fafafa
+ }
 
 .description-begin{
 	height: auto;
