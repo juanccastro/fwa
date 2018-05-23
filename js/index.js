@@ -61,12 +61,15 @@ $(document).ready(function() {
 	  
 	  if(curPage == 1){
 		  $scroller.css("margin-top", "0px"); 
-	  }else if(curPage == 2){
-		  $scroller.css("margin-top", "-100px"); 
-	  }else if(curPage == 3){
-		  $scroller.css("margin-top", "-200px"); 
-	  }else if(curPage == 4){
-		  $scroller.css("margin-top", "-300px"); 
+	  } 
+	  if(curPage == 2){
+		  $scroller.css("margin-top", "-130px"); 
+	  }
+	  if(curPage == 3){
+		  $scroller.css("margin-top", "-260px"); 
+	  }
+	  if(curPage == 4){
+		  $scroller.css("margin-top", "-380px"); 
 	  }
 	  
   }
