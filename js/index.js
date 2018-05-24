@@ -9,7 +9,7 @@ $(document).ready(function() {
       $scroller = $("#scroller"),
       $paginationPage = $(".pagination .page"),
       $paginationTotal = $(".total-pages"),
-      $textStuff = $(".box, .texts, .linea"),
+      $textStuff = $(".texts, .linea"),
       $lines = $(".linea"),
  	  $names = $(".section-heading, .additional-text");
   
@@ -40,7 +40,7 @@ $(document).ready(function() {
     }, time);
     setTimeout(function() {
       // cached selector not working because of newely created clone when moving up more then 2 positions
-      $(".box, .texts, .linea").css({"margin-top": 0 - (parseInt($(".nav-elem.active").attr("data-page")) - 1) * 100 + "vh"}).hide();
+      $(".texts, .linea").css({"margin-top": 0 - (parseInt($(".nav-elem.active").attr("data-page")) - 1) * 100 + "vh"}).hide();
     }, 900);
     setTimeout(function() {
       $textStuff.show();
