@@ -3,13 +3,13 @@ var $cursor = $('#follower');
 
 
 
- $(".section-heading").mouseover(function() {
+ $(".text-list").mouseover(function() {
   $( ".up" ).css( "margin-top","-2em");
   $( ".down" ).css( "margin-top","0.5em");
   $( ".linea" ).css( "width","5%");
 });
 
- $(".section-heading").mouseout(function() {
+ $(".text-list").mouseout(function() {
   $( ".up" ).css( "margin-top","0.5em" );
   $( ".down" ).css( "margin-top","2em" );
   $( ".linea" ).css( "width","8%");
