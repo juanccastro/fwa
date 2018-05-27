@@ -91,6 +91,7 @@ nav h3, footer h3{
 	opacity: 0.4;
     height: 50%;
 	-webkit-transition: all 0.5s ease;
+    color: white;
 }
 
 
@@ -105,7 +106,8 @@ nav h3:hover , footer h3:hover{
   height: 100vh;
   overflow: hidden;
 /*  background: #e7e7e7;*/
-  background: #fafafa;
+/*  background: #fafafa;*/
+  background: black;
 	z-index: 0;
 }
 
@@ -485,13 +487,16 @@ li {
     font-weight:600;
 	-webkit-transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
   	transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
-  -webkit-text-stroke: 1.2px #141414;
-  text-stroke: 1.2px #141414;
+ /* -webkit-text-stroke: 1.2px #141414;
+  text-stroke: 1.2px #141414;*/  
+    -webkit-text-stroke: 1.2px white;
+  text-stroke: 1.2px white;
+    color: white;
  }
 
 .text-list:hover{
-  -webkit-text-stroke: 1.2px #141414;
-	text-stroke: 1.2px #141414;
+  -webkit-text-stroke: 1.2px white;
+  text-stroke: 1.2px white;
   transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
     color: rgb(0,0,0,0);
 	cursor: pointer;
@@ -508,6 +513,7 @@ li {
 	height: 20px;
   	overflow: hidden;
   	width: 300px;
+    color: white;
 }
 
 .linea{
@@ -517,8 +523,8 @@ li {
   opacity: 1;
   width: 8%;
   right: 33%;
-  height: 1.3px;
-  background-color: black;
+  height: 0.2vh;
+  background-color: white;
   	-webkit-transition: all 0.6s cubic-bezier(0.7, 0.18, 0.15, 1);
    border: none; /*on supprime le style par défaut*/
 }
