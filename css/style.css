@@ -413,7 +413,8 @@ nav h3:hover , footer h3:hover{
 .bg-part,
 .color {
   margin-top:18vh; 
-  background-size: 100%;
+  background-size: 50%;
+    background-position: 20% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-transition: margin 1.3s cubic-bezier(.68,.01,.33,.99);
