@@ -53,7 +53,7 @@ $(document).ready(function() {
   function magicStuff(paramPage) {
     if (paramPage) curPage = paramPage;
     navigating = true;
-    var calculatedMargin = 13 - (curPage - 1) * 100;
+    var calculatedMargin = 18 - (curPage - 1) * 100;
     $(".bg-part, .left-part").css("margin-top", calculatedMargin +"vh"); 
 	
 	var calculatedMargin = 0 - (curPage - 1) * 100;

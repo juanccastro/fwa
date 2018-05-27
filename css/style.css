@@ -413,7 +413,7 @@ nav h3:hover , footer h3:hover{
 .left-part,
 .bg-part,
 .color {
-  margin-top:13vh; 
+  margin-top:18vh; 
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -605,7 +605,7 @@ li {
 
 .bg-part {
   width: 3%;
-  height:70%;
+  height:60%;
   margin-left: 15%;
   overflow: hidden;
 }
