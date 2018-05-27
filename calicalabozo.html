@@ -28,7 +28,20 @@
 	
 <body class="hidden">
 <!--	  		 <div id="follower"></div>-->
-
+ 
+	<div class="progress-indicator">
+    <svg>
+        <g>
+            <circle cx="0" cy="0" r="20" class="animated-circle" transform="translate(50,50) rotate(-90)"  />
+        </g>
+        <g>
+            <circle cx="0" cy="0" r="38" transform="translate(50,50)"  />
+        </g>
+    </svg>
+    <div class="progress-count"></div>
+   </div>
+   <div class="progress-indicator-2"></div>
+	
  <div id="follower"></div>
 	<header>
 		<nav>
@@ -317,6 +330,7 @@
 		
 
   		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>	
+	
     	<script  src="js/scroll.js"></script>
 
   		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
@@ -397,6 +411,42 @@
 				mobile: false, 
 				viewFactor: 0.1,
 		  });
+	</script>
+	
+	<script>
+	
+
+var $prog2 = $('.progress-indicator-2');
+function updateProgress(perc){
+    $prog2.css({width : perc*100 + '%'});
+}
+
+(function(){
+    var $w = $(window);
+    var $circ = $('.animated-circle');
+    var $progCount = $('.progress-count');
+    var $prog2 = $('.progress-indicator-2');
+    var wh = $w.height();
+    var h = $('.case').height();
+    var sHeight = h - wh;
+    $w.on('scroll', function(){
+        var perc = Math.max(0, Math.min(1, $w.scrollTop()/sHeight));
+        updateProgress(perc);
+    });
+ 
+    function updateProgress(perc){
+        var circle_offset = 126 * perc;
+        $circ.css({
+            "stroke-dashoffset" : 126 - circle_offset
+        });
+        $progCount.html(Math.round(perc * 100) + "%");
+ 
+        $prog2.css({width : perc*100 + '%'});
+    }
+ 
+	}());
+		
+	
 	</script>
 	<script>
 		window.addEventListener("beforeunload", function () {

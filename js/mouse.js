@@ -1,5 +1,6 @@
 var cambio=true;
 var $cursor = $('#follower');
+var $cursorD = $('.progress-indicator');
 
 
 

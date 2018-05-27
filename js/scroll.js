@@ -9,11 +9,11 @@ $(document).ready(function() {
 
 });
 
-var scroll =  $('.case-main').requestAnimationFrame ||
-     $('.case-main').webkitRequestAnimationFrame ||
-     $('.case-main').mozRequestAnimationFrame ||
-     $('.case-main').msRequestAnimationFrame ||
-     $('.case-main').oRequestAnimationFrame ||
+var scroll =  window.requestAnimationFrame ||
+     window.webkitRequestAnimationFrame ||
+     window.mozRequestAnimationFrame ||
+     window.msRequestAnimationFrame ||
+     window.oRequestAnimationFrame ||
     // IE Fallback, you can even fallback to onscroll
     function(callback) {
         $('.case-main').setTimeout(callback, 1000 / 60)
