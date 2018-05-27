@@ -1119,7 +1119,7 @@ header {
 	overflow: hidden;
 	background-image: url(../imgs/foto.png);
 	background-size: cover;
-	background-position: 50% 50%;
+	background-position: 50% 100%;
 }
 
 .margen{
