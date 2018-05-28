@@ -91,9 +91,11 @@ nav h3, footer h3{
 	opacity: 0.4;
     height: 50%;
 	-webkit-transition: all 0.5s ease;
-    color: #fafafa;
 }
 
+.black{
+	 color: rgb(13,13,13) !important;
+}
 
 nav h3:hover , footer h3:hover{
 	-webkit-transition: all 0.5s ease;
@@ -1117,8 +1119,9 @@ header {
 }
 
 .underline{
-	font-weight:600;
-	color: white;
+	font-weight:700;
+	color: #fafafa;
+	text-decoration: none;
 }
 
 .about{
@@ -1126,13 +1129,14 @@ header {
 }
 
 .photo{
+	margin-top: 7%;
  	height: 100%;
-	width: 40%;
+	width: 38%;
 	position: absolute;
 	overflow: hidden;
 	background-image: url(../imgs/foto.png);
 	background-size: cover;
-	background-position: 50% 100%;
+	background-position: 20% 500%;
 }
 
 .margen{
