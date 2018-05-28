@@ -125,7 +125,7 @@ nav h3:hover , footer h3:hover{
   height: 100vh;
   overflow: hidden;
 /*  background: #e7e7e7;*/
-  background: black;
+ background: rgb(13,13,13);
 	z-index: 0;
 }
 
@@ -500,6 +500,12 @@ li {
   transition: all 0.5s cubic-bezier(0.7, 0.18, 0.15, 1);
     color: rgb(0,0,0,0);
 	cursor: pointer;
+}
+
+.text-list:hover .bg-part{
+   background-size: 50%;
+   background-position: 20% 50%;
+  -webkit-transition: all 1.3s cubic-bezier(.68,.01,.33,.99);
 }
 
 
