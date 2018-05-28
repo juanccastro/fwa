@@ -1111,8 +1111,9 @@ header {
 }
 
 .underline{
-	font-weight:600;
-	color: white;
+	font-weight:700;
+	color: #fafafa;
+	text-decoration: none;
 }
 
 .about{
