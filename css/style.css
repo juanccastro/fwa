@@ -1121,13 +1121,14 @@ header {
 }
 
 .photo{
+	margin-top: 7%;
  	height: 100%;
-	width: 40%;
+	width: 38%;
 	position: absolute;
 	overflow: hidden;
 	background-image: url(../imgs/foto.png);
 	background-size: cover;
-	background-position: 50% 100%;
+	background-position: 20% 500%;
 }
 
 .margen{
