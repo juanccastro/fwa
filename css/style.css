@@ -893,7 +893,7 @@ header {
 
 .description-begin{
 	height: auto;
-	font-size: 1.6rem;
+	font-size: 1vw;
  	vertical-align: top; 
 	line-height: 1.875;
 }
@@ -901,7 +901,7 @@ header {
 .description-about{
 	position: relative;
 	height: auto;
-	font-size: 1.3rem;
+	font-size: 0.7vw;
  	vertical-align: top; 
 	line-height:2.5;
 }
@@ -1119,7 +1119,7 @@ header {
 }
 
 .underline{
-	font-weight:700;
+	font-weight:500;
 	color: #fafafa;
 	text-decoration: none;
 }
@@ -1136,7 +1136,7 @@ header {
 	overflow: hidden;
 	background-image: url(../imgs/foto.png);
 	background-size: cover;
-	background-position: 20% 500%;
+	background-position: 50% 200%;
 }
 
 .margen{
