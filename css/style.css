@@ -893,7 +893,7 @@ header {
 
 .description-begin{
 	height: auto;
-	font-size: 1.1vw;
+	font-size: 1vw;
  	vertical-align: top; 
 	line-height: 1.875;
 }
@@ -901,13 +901,13 @@ header {
 .description-about{
 	position: relative;
 	height: auto;
-	font-size: 0.9vw;
+	font-size: 0.8vw;
  	vertical-align: top; 
 	line-height:2.5;
 }
 
 .contact{
- 	font-size: 3rem;
+ 	font-size: 2.3rem;
 	font-weight: 700;
  	vertical-align: top; 
 }
@@ -937,6 +937,11 @@ header {
 .text-block-case{
 	width: 49%;
 	display: inline-block;
+	vertical-align: top; 
+}
+
+.text-block-experience{
+ 	display: inline-block;
 	vertical-align: top; 
 }
  
@@ -1119,24 +1124,24 @@ header {
 }
 
 .underline{
-	font-weight:500;
+	font-weight:600;
 	color: #fafafa;
 	text-decoration: none;
 }
 
-a {
+.underline{
   transition: all 0.8s;
   position: relative;
   text-decoration: none;
 }
 
-a:after {
+.underline:after {
   transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #fafafa;
   content: '';
   -webkit-transform: scaleX(0);
@@ -1144,10 +1149,10 @@ a:after {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
-a:hover {
+.underline:hover {
   transition: all 0.8s;
 }
-a:hover:after {
+.underline:hover:after {
   -webkit-transform-origin: bottom left;
   -ms-transform-origin: bottom left;
   transform-origin: bottom left;

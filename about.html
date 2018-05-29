@@ -82,11 +82,11 @@
 					<p class="category foo">Experience</p>
 				</div>
 					
-				<div class="text-block-role">
+				<div class="text-block-experience">
 					<p class="description-begin foo"><a class="underline" href="http://toolofna.com/" target="_blank">Tool of North America</a></p>
 				</div>
 				
-				<div class="text-block-case margin">
+				<div class="text-block-experience margin">
 					<p class="description-about foo">Interactive Design Intern · 2017 - 2018</p>
 				</div>
 				
@@ -103,7 +103,7 @@
 					<p class="description-begin foo">Freelancer</p>
 				</div>
 				
-				<div class="text-block-case margin">
+				<div class="text-block-role margin">
 					<p class="description-about foo">Graphic / Motion Designer · 2014 - 2016</p>
 				</div>
 				
@@ -117,8 +117,12 @@
 					
 				<div class="text-block-case">
 					
-					<p class="contact foo">
-						<a href="mailto:juanccastro02@gmail.com?Subject=Greetings" target="_blank">Just click here to copy my email and say Hi.</a>
+					<p class="contact underline foo">
+						<a href="mailto:juanccastro02@gmail.com?Subject=Greetings" target="_blank">Say 'Hi' or something, I don't know.</a>
+                        <!--                     
+                        <a onclick="myFunction()" id="myInput" class="underline" value="juanccastro02@gmail.com" >Just click here to copy my email and say Hi.</a>
+                        -->
+                        
 					</p>
 					 
 				</div>
@@ -170,7 +174,13 @@
 
     	<script  src="js/mouse.js"></script>
     
-         
+         <script>
+             function myFunction(){
+                 var copyText = document.getElementById("myInput");
+                 copyText.select();
+                 document.execCommand("copy");
+             }
+         </script>
 
 	<script>
 		
