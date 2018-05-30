@@ -8,12 +8,14 @@ var $cursorD = $('.progress-indicator');
   $( ".up" ).css( "margin-top","-2em");
   $( ".down" ).css( "margin-top","0.5em");
   $( ".linea" ).css( "width","5%");
+  $( ".bg-part" ).css( "background-size","52%");
 });
 
  $(".text-list").mouseout(function() {
   $( ".up" ).css( "margin-top","0.5em" );
   $( ".down" ).css( "margin-top","2em" );
   $( ".linea" ).css( "width","8%");
+  $( ".bg-part" ).css( "background-size","50%");
 });
 
 
