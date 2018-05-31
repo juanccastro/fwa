@@ -360,11 +360,11 @@ nav h3:hover , footer h3:hover{
 }
 
 .section.section-1 .bg-part {
-  background-image: url("../imgs/cali_port.jpg");
+  background-image: url("../imgs/andres.png");
 }
 
 .section.section-2 .bg-part {
-  background-image: url("../imgs/clothe_gold.jpg");
+  background-image: url("../imgs/load.png");
 }
 
 .section.section-3 .bg-part {
@@ -372,7 +372,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .section.section-4 .bg-part {
-  background-image: url("../imgs/puerto.jpg");
+  background-image: url("../imgs/bg-project-4.png");
 }
 
 .section.section-1 .color {
@@ -417,8 +417,8 @@ nav h3:hover , footer h3:hover{
 .bg-part,
 .color {
   margin-top:18vh; 
-  background-size: 50%;
-    background-position: 20% 50%;
+  background-size: 100%;
+    background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-transition: margin 1.3s cubic-bezier(.68,.01,.33,.99);
