@@ -364,7 +364,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .section.section-2 .bg-part {
-  background-image: url("../imgs/load.png");
+  background-image: url("../imgs/andres.png");
 }
 
 .section.section-3 .bg-part {
@@ -416,10 +416,10 @@ nav h3:hover , footer h3:hover{
 .left-part,
 .bg-part,
 .color {
+	opacity: 0.8;
   margin-top:18vh; 
-  background-size: 100%;
-    background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-size: 70%;
+    background-position: 40% 50%;
   background-attachment: fixed;
   -webkit-transition: margin 1.3s cubic-bezier(.68,.01,.33,.99);
   transition: all 1.3s  cubic-bezier(.68,.01,.33,.99);
