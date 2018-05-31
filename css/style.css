@@ -912,6 +912,7 @@ header {
 }
 
 .description-about{
+    width: 100%;
 	position: relative;
 	height: auto;
 	font-size: 0.8vw;
@@ -956,6 +957,7 @@ header {
 .text-block-experience{
  	display: inline-block;
 	vertical-align: top; 
+    width: 25%;
 }
  
 .text-block-role{
@@ -1178,6 +1180,7 @@ header {
 
 .photo{
 	margin-top: 7%;
+	margin-left: 3%;
  	height: 100%;
 	width: 38%;
 	position: absolute;
