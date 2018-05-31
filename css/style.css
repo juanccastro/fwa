@@ -73,19 +73,17 @@ img{
 
 .logo img{
 	width: 20%;
+    margin-top:-10px;
 }
 
 .menu,.sidebar-hover{
     right: 0px;
 }
 
-.menu:first-child{
-	
+.logo:nth-child(2){
+	margin-left: 15%;
 }
 
-.foot,.sidebar-hover{
-    z-index: 2;
-}
 
 nav h3, footer h3{
 	-webkit-touch-callout: none; /* iOS Safari */
@@ -101,6 +99,14 @@ nav h3, footer h3{
 	opacity: 0.4;
     height: 50%;
 	-webkit-transition: all 0.5s ease;
+}
+
+.foot,.sidebar-hover{
+ 
+    z-index: 2;
+}
+footer .foot h3{
+  opacity:1 !important;
 }
 
 .black{
@@ -373,11 +379,11 @@ nav h3:hover , footer h3:hover{
   background-image: url("../imgs/andres.png");
 }
 
-.section.section-2 .bg-part {
-  background-image: url("../imgs/andres.png");
+.section.section-3 .bg-part {
+  background-image: url("../imgs/tesla_design_studio_full.png");
 }
 
-.section.section-3 .bg-part {
+.section.section-2 .bg-part {
    background-image: url("../imgs/cards2.png");
 }
 
@@ -1176,7 +1182,7 @@ header {
 	width: 38%;
 	position: absolute;
 	overflow: hidden;
-	background-image: url(../imgs/foto.png);
+	background-image: url(../imgs/foto2.png);
 	background-size: cover;
 	background-position: 50% 200%;
 }
