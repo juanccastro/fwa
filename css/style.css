@@ -363,11 +363,11 @@ nav h3:hover , footer h3:hover{
   background-image: url("../imgs/andres.png");
 }
 
-.section.section-2 .bg-part {
-  background-image: url("../imgs/andres.png");
+.section.section-3 .bg-part {
+  background-image: url("../imgs/tesla_design_studio_full.png");
 }
 
-.section.section-3 .bg-part {
+.section.section-2 .bg-part {
    background-image: url("../imgs/cards2.png");
 }
 
@@ -1166,7 +1166,7 @@ header {
 	width: 38%;
 	position: absolute;
 	overflow: hidden;
-	background-image: url(../imgs/foto.png);
+	background-image: url(../imgs/foto2.png);
 	background-size: cover;
 	background-position: 50% 200%;
 }
