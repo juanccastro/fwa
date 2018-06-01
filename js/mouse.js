@@ -17,16 +17,16 @@ var $cursorD = $('.progress-indicator');
 });
 
 
- $("h3").mouseover(function() {
+ $(".big h3").mouseover(function() {
   $cursor.addClass('scale');
 	 
 	 	 /*cambio=false;
 	 var post= $("h3").position();
 	   $( "#follower" ).css( {left:post.left, top:post.top} );*/
 });
-
-	
-$( "h3" ).mouseout(function() {
+ 
+	 
+$( ".big h3" ).mouseout(function() {
        $cursor.removeClass('scale');
        cambio=true;
 });

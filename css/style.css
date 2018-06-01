@@ -175,10 +175,7 @@ nav h3:hover , footer h3:hover{
 
 /* END OF GLOBAL STYLES */
 /* SIDEBAR HOVER STYLES */
-
-.sidebar-hover:hover ~ .sidebar-real {
-  max-width: 30rem;
-}
+ 
 .sidebar-hover:hover ~ .sidebar-real .nav-elem {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -253,9 +250,9 @@ nav h3:hover , footer h3:hover{
 	position: fixed;
   z-index: 4;
   left: 15rem;
-  width: 30rem;
+  width: 100rem;
   height: 500rem;
-  max-width: 0;
+  max-width: 50rem;
   overflow: hidden;
   -webkit-transition: max-width 0.4s 0.2s, -webkit-transform 0.3s;
   transition: max-width 0.4s 0.2s, -webkit-transform 0.3s;
@@ -263,9 +260,7 @@ nav h3:hover , footer h3:hover{
   transition: max-width 0.4s 0.2s, transform 0.3s, -webkit-transform 0.3s;
   will-change: max-width, transform;
 }
-.sidebar-real:hover {
-  max-width: 30rem;
-}
+ 
 .sidebar-real:hover .nav-elem {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -316,10 +311,10 @@ nav h3:hover , footer h3:hover{
 }
 
 .nav-elem {
-	margin-top: 10%;
+  margin-top: 10%;
   position: relative;
   width: 100%;
-  height: 20rem;
+  height: 30rem;
   background-size: cover;
   -webkit-transition: -webkit-transform 0.4s 0.3s;
   transition: -webkit-transform 0.4s 0.3s;
@@ -349,7 +344,7 @@ nav h3:hover , footer h3:hover{
   background: transparent;
 }
 .nav-elem.nav-1 {
-  background-image: url("../imgs/cali_port.jpg");
+  background-image: url("../imgs/andres.png");
 }
 .nav-elem.nav-2 {
    background-image: url("../imgs/bg-project-3.png");
@@ -836,7 +831,7 @@ svg .animated-circle {
 }
 
 #follower.scale{
-  transform: scale(1.6);
+  transform: scale(2);
 }
 
 #follower.is-moving {
