@@ -28,9 +28,7 @@ var $cursorD = $('.progress-indicator');
 	
 $( "h3" ).mouseout(function() {
        $cursor.removeClass('scale');
-		 cambio=true;
-	
-	
+       cambio=true;
 });
 
  $(window).mousedown(function() {

@@ -80,9 +80,7 @@ img{
     right: 0px;
 }
 
-.logo:nth-child(2){
-	margin-left: 15%;
-}
+
 
 
 nav h3, footer h3{
@@ -94,19 +92,36 @@ nav h3, footer h3{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 	font-family: "Avenir Next";
-	font-weight: 300;
- 	font-size:1vw;
-	opacity: 0.4;
+	font-weight: 500;
+    letter-spacing: 1px;
+ 	font-size:0.8vw;
+	opacity: 1;
     height: 50%;
 	-webkit-transition: all 0.5s ease;
 }
 
 .foot,.sidebar-hover{
- 
     z-index: 2;
 }
 footer .foot h3{
-  opacity:1 !important;
+  font-weight: 200;
+  opacity:0.5 !important;
+}
+
+.logo:nth-child(2){
+    color: #fafafa;
+	margin-left: 25%;
+    opacity:1 !important;
+}
+.logo:nth-child(2) h3{
+    font-weight: 200;
+    opacity:0.5 !important;
+}
+
+.foot:nth-child(2){
+    color: #fafafa;
+	margin-left: 25%;
+    opacity:1 !important;
 }
 
 .black{
@@ -1180,14 +1195,14 @@ header {
 
 .photo{
 	margin-top: 7%;
-	margin-left: 3%;
- 	height: 100%;
-	width: 38%;
+	margin-left: 6%;
+ 	height: 80%;
+	width: 28%;
 	position: absolute;
 	overflow: hidden;
 	background-image: url(../imgs/foto2.png);
 	background-size: cover;
-	background-position: 50% 200%;
+	background-position: 50% 90%;
 }
 
 .margen{
@@ -1206,7 +1221,7 @@ header {
 	margin-top: 15%;
     z-index: 2;
     font-size: 4rem;
-	width: 55%;
+	width: 50%;
     line-height: 1.5;
     -webkit-text-stroke: 0.6px white;
 	text-stroke: 0.6px white;
