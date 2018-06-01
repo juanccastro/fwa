@@ -933,9 +933,11 @@ header {
 	font-size: 0.8vw;
  	vertical-align: top; 
 	line-height:2.5;
+    font-weight: 100;
 }
 
 .contact{
+    width: 80%;
  	font-size: 2.3rem;
 	font-weight: 700;
  	vertical-align: top; 
