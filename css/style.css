@@ -36,12 +36,11 @@ html, body {
 nav{
 	z-index: 2;
 	width: 85%;
-	height: 50px;
+	height: 70px;
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: auto;
-	margin-top: 3%;
 }
 
 footer{
@@ -66,14 +65,19 @@ img{
 }
 
 .logo,.menu,.foot,.sidebar-hover{
+	vertical-align: middle;
 	position: absolute;
 	display: inline-block;
 
 }
 
+.logo,.menu{
+	bottom: 0;
+}
+
 .logo img{
 	width: 20%;
-    margin-top:-10px;
+    margin-top:10%;
 }
 
 .menu,.sidebar-hover{
@@ -93,6 +97,7 @@ nav h3, footer h3{
                                   supported by Chrome and Opera */
 	font-family: "Avenir Next";
 	font-weight: 500;
+	vertical-align: middle;
     letter-spacing: 1px;
  	font-size:0.8vw;
 	opacity: 1;
