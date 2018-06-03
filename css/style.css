@@ -939,8 +939,7 @@ header {
 }
 
 .contact{
-    width: 80%;
- 	font-size: 2.3rem;
+ 	font-size: 2rem;
 	font-weight: 700;
  	vertical-align: top; 
 }
@@ -981,6 +980,11 @@ header {
  
 .text-block-role{
  	width: 20%;
+	display: inline-block;
+	vertical-align: top; 
+}
+.about .text-block-role{
+ 	width: 30%;
 	display: inline-block;
 	vertical-align: top; 
 }
