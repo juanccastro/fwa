@@ -849,7 +849,7 @@ svg .animated-circle {
 
 .case{
 	overflow-y:scroll;
-	position: fixed;
+	position: absolute;
 	width:100%;
 	height: 100%;
    	top: 0;
@@ -857,8 +857,7 @@ svg .animated-circle {
     left: 0;		
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-	padding-bottom: 35%;
-}
+ }
 .case-main .case {
     	background-color: #fafafa;
 
@@ -896,7 +895,7 @@ svg .animated-circle {
 }
 
 header {
-	z-index: 2;
+	z-index: 3;
 	height: 120px;
     position: fixed;
     top: 0;
@@ -1062,17 +1061,9 @@ header {
 	transform: matrix(1.05, 0, 0, 1.05, 0, 0);
 	transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
 }
-
-.wrap{
-    overflow-y:scroll;
- 	position: relative;
-	z-index: 2;
-	background-color: #fafafa;
-}
-
+ 
 .footer{
-	position: fixed;
-     background-color: #141414;
+      background-color: #141414;
     width: 100%;
     color: white;
     display: flex;
