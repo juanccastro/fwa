@@ -12,7 +12,7 @@ $("nav a").on("click", function(event){
 			$(".main").fadeOut(250, function(){
 				const newPage= $(data).filter(".about-main").html();
 				
-				$("section").html(newPage);
+				$(".about-main").html(newPage);
 				
 				$(".about-main").fadeIn(250);
 			});
