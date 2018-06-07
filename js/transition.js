@@ -10,11 +10,11 @@ $("nav a").on("click", function(event){
 		url: href,
 		success:function(data){
 			$(".main").fadeOut(250, function(){
-				const newPage= $(data).filter(".about-main").html();
+				const newPage= $(data).filter(".main").html();
 				
-				$(".about-main").html(newPage);
+				$(".main").html(newPage);
 				
-				$(".about-main").fadeIn(250);
+				$(".main").fadeIn(250);
 			});
 		}
 	});
