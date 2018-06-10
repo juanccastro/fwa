@@ -126,7 +126,12 @@ footer .foot h3{
     opacity:0.5 !important;
 }
 
+a h3{
+    text-decoration:none;
+    
+}
 i{
+    display: inline-block;
     width: auto;
     height: auto;
     vertical-align: middle;
