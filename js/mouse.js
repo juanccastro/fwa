@@ -1,7 +1,6 @@
 var cambio=true;
 var $cursor = $('#follower');
-var $cursorD = $('.progress-indicator');
-
+ 
 
 
  $(".text-list").mouseover(function() {
@@ -17,7 +16,7 @@ var $cursorD = $('.progress-indicator');
 });
 
 
- $(".big h3").mouseover(function() {
+ $(".big").mouseover(function() {
   $cursor.addClass('scale');
 	 
 	 	 /*cambio=false;
@@ -26,7 +25,7 @@ var $cursorD = $('.progress-indicator');
 });
  
 	 
-$( ".big h3" ).mouseout(function() {
+$( ".big" ).mouseout(function() {
        $cursor.removeClass('scale');
        cambio=true;
 });
@@ -45,10 +44,10 @@ $( ".big h3" ).mouseout(function() {
 
 
 function moveCursor(e) {
-  	$cursor.addClass('is-moving');
+//  	$cursor.addClass('is-moving');
 	TweenLite.to($cursor, 1.2, {
-    left: e.pageX - 38,
-    top: e.pageY - 38,
+    left: e.pageX,
+    top: e.pageY,
     ease: Power4.easeOut, 
   });
   
