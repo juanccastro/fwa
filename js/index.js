@@ -12,8 +12,8 @@ $(document).ready(function() {
       $textStuff = $(".texts, .linea"),
       $lines = $(".linea"),
  	  $names = $(".section-heading, .additional-text"),
- 	  $up = $(".up"),
- 	  $down = $(".down");
+ 	  $up = $(".arrow-up"),
+ 	  $down = $(".arrow-down");
   
   if (pages >= 10) {
     $paginationTotal.text(pages);

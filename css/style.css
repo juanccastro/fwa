@@ -262,8 +262,9 @@ nav h3:hover , footer h3:hover{
 /* END OF SIDEBAR HOVER */
 /* REAL SIDEBAR (OFF-CANVAS MENU) STYLES */
 .sidebar-real {
-	position: fixed;
-  z-index: -2;
+    display: none;
+  position: fixed;
+  z-index:  0;
   left: 15rem;
   width: 100rem;
   height: 500rem;
@@ -803,8 +804,9 @@ li {
 }
 
 #follower.scale{
-    opacity: 0.3;
-    transform: scale(5);
+      mix-blend-mode: difference;
+ 
+    transform: scale(8);
     -webkit-transition:transform 0.5s cubic-bezier(.31,.99,.57,1), opacity 0.5s cubic-bezier(.31,.99,.57,1);
 
 }
