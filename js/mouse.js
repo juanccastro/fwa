@@ -46,8 +46,8 @@ $( ".big" ).mouseout(function() {
 function moveCursor(e) {
 //  	$cursor.addClass('is-moving');
 	TweenLite.to($cursor, 1.2, {
-    left: e.pageX,
-    top: e.pageY,
+    left: e.pageX-5,
+    top: e.pageY-5,
     ease: Power4.easeOut, 
   });
   

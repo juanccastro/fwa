@@ -773,8 +773,9 @@ li {
   height:10px;
   pointer-events: none;
   border-radius:50px;
-  background-color: #1e1e1e;
+  background-color: #f1f1f1  !important;
   opacity: 1;
+  mix-blend-mode: difference;
   -webkit-transition:transform 0.5s cubic-bezier(.31,.99,.57,1), opacity 0.5s cubic-bezier(.31,.99,.57,1);
  
 }
