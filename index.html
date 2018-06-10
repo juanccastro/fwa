@@ -15,7 +15,7 @@
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="theme-color" content="#ffffff">
 	<script src="js/barba.min.js" type="text/javascript"></script>
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700" rel="stylesheet">
 
 	
@@ -214,12 +214,17 @@
 	
 	
 	<footer>
-                 <div class="foot white"> 
-                      <h3>scroll down</h3>
+                 <div class="foot white down big"> 
+                      <h3>
+                          <i class="fa fa-angle-down" style="font-size:36px"></i>
+                      </h3>
+                     
                   </div>
         
-                <div class="foot white"> 
-                      <h3>selected projects</h3>
+                <div class="foot white up big"> 
+                        <h3>
+                          <i class="fa fa-angle-up" style="font-size:36px"></i>
+                        </h3>
                   </div>
         			<div class="sidebar-hover white big">
                     <h3> <p class="pagination">
@@ -250,7 +255,21 @@
     <script  src="js/mouse.js"></script>
 
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-	 
+	 <script>
+
+         $(".text-list").mouseover(function() {
+            $( ".up" ).css( "margin-top","-2em");
+            $( ".down" ).css( "margin-top","0.5em");
+            $( ".linea" ).css( "width","5%");
+        });
+
+        $(".text-list").mouseout(function() {
+             $( ".up" ).css( "margin-top","0.5em" );
+            $( ".down" ).css( "margin-top","2em" );
+             $( ".linea" ).css( "width","8%");
+        });
+    
+        </script>
     
 	<script>
 		window.addEventListener("beforeunload", function () {

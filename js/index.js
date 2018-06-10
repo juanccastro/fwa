@@ -11,7 +11,9 @@ $(document).ready(function() {
       $paginationTotal = $(".total-pages"),
       $textStuff = $(".texts, .linea"),
       $lines = $(".linea"),
- 	  $names = $(".section-heading, .additional-text");
+ 	  $names = $(".section-heading, .additional-text"),
+ 	  $up = $(".up"),
+ 	  $down = $(".down");
   
   if (pages >= 10) {
     $paginationTotal.text(pages);
@@ -122,6 +124,7 @@ $(document).ready(function() {
       }
     }
   });
+    
   
   $(document).on("mousewheel DOMMouseScroll",
                  ".sidebar-hover, .sidebar-real",
@@ -148,44 +151,12 @@ $(document).ready(function() {
     $sidebar.css("transform", "translateY("+ sidebarScroll +"px)");
   });
   
-  $(document).on("click", ".nav-elem:not(.active)", function() {
-    if (navigating) return;
-    var activePage = parseInt($(".nav-elem.active").attr("data-page"), 10),
-        futurePage = $(this).attr("data-page");
-    
-    pagination(futurePage);
-    
-    if (Math.abs(activePage - futurePage) > 2) {
-      var $fakePage = $(".section-" + futurePage).clone(),
-          $currentPage = $(".section-" + activePage),
-          fakeNumber = 0;
-      // ugly code, do not enter here
-      if (activePage < futurePage) {
-        // moving down
-        $currentPage.after($fakePage);
-        fakeNumber = activePage + 1;
-        $(".main").css("top");
-        randomDelay();
-        magicStuff(fakeNumber);
-      } else {
-        // moving up (real hell)
-        $currentPage.before($fakePage);
-        fakeNumber = activePage - 1;
-        trickyStuff(activePage + 1);
-        $(".main").css("top");
-        randomDelay();
-        $(".main").css("top");
-        magicStuff(activePage);
-      }
-      timeoutNav(2050);
-      setTimeout(function() {
-        $fakePage.remove();
-        trickyStuff(futurePage);
-      }, 1000);
-    } else {
-      magicStuff(futurePage);
-      timeoutNav();
-    }
+  $down.on("click" , function() {
+         navigateDown();
+  });
+  
+  $up.on("click" , function() {
+         navigateUp();
   });
   
   $(window).resize(function() {

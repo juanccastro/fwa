@@ -90,7 +90,7 @@ img{
 
 
 
-nav h3, footer h3{
+nav h3, footer h3, footer i{
 	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -109,11 +109,11 @@ nav h3, footer h3{
 }
 
 .foot,.sidebar-hover{
-    z-index: 2;
+    z-index: 4;
 }
 footer .foot h3{
   font-weight: 200;
-  opacity:0.5 !important;
+  opacity:1 !important;
 }
 
 .logo:nth-child(2){
@@ -124,6 +124,12 @@ footer .foot h3{
 .logo:nth-child(2) h3{
     font-weight: 200;
     opacity:0.5 !important;
+}
+
+i{
+    width: auto;
+    height: auto;
+    vertical-align: middle;
 }
 
 .foot:nth-child(2){
@@ -257,7 +263,7 @@ nav h3:hover , footer h3:hover{
 /* REAL SIDEBAR (OFF-CANVAS MENU) STYLES */
 .sidebar-real {
 	position: fixed;
-  z-index: 4;
+  z-index: -2;
   left: 15rem;
   width: 100rem;
   height: 500rem;

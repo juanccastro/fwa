@@ -2,6 +2,7 @@ var cambio=true;
 var $cursor = $('#follower');
  
 
+/*
 
  $(".text-list").mouseover(function() {
   $( ".up" ).css( "margin-top","-2em");
@@ -14,6 +15,7 @@ var $cursor = $('#follower');
   $( ".down" ).css( "margin-top","2em" );
   $( ".linea" ).css( "width","8%");
 });
+*/
 
 
  $(".big").mouseover(function() {
