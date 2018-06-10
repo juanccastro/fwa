@@ -14,7 +14,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
 	<link rel="manifest" href="imgs/favicon/site.webmanifest">
 	<meta name="msapplication-TileColor" content="#000000">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#f1f1f1">
 	
 	
 	<script src="js/barba.min.js" type="text/javascript"></script>
@@ -30,25 +30,25 @@
 <!--	  		 <div id="follower"></div>-->
  
 
- <div id="follower" class="whitemouse"></div>
+ <div id="follower"></div>
 	<header>
 		<nav>
 				<div class="logo">
-					<img src="imgs/logo-white.png">
+					<img src="imgs/logo.png">
 				</div>
 			
 			
 				<div class="menu big">
-					<a href="index.html" style="text-decoration:none;" class="white"><h3>go back</h3></a>
+					<a href="index.html" style="text-decoration:none;color:rgb(13,13,13)"><h3>go back</h3></a>
 				</div>
 		</nav>
 	</header>
-    <div class="main">
+    <div class="case-main">
 <!-- <div id="pointer"></div>-->
 		 
- 		<div class="case white">
+ 		<div class="case">
 			
-			<section class="header white">
+			<section class="header">
 				
 				<div class="textcont">
 					
@@ -118,8 +118,14 @@
 				<div class="text-block-case margin">
 					
 					<p class="category foo">01. User Experience</p>
-					<p class="description-begin foo">We created an interactive website to represent the cultural aspects from the city that the writer Andrés Caicedo has inside his books and short stories.</p>
+					<p class="description-begin foo">We wanted to created an interactive website that promotes the cultural identity and represent the cultural aspects from the city that the writer Andrés Caicedo has inside his books and short stories.</p>
+                    <br>
+                    <hr>
+                    <br>
 					<p class="description-begin foo">Research...</p>
+                    <br>
+                    <hr>
+                    <br>
 					<p class="description-begin foo">Style...</p>
 				</div>
 				
@@ -127,7 +133,7 @@
 				
                 
 				<div class="media">
-					<img class="foo" src="imgs/fokiu.png" >
+					<img class="foo" src="imgs/wireframe2-cc.png" >
 				</div>
 				
 				<div class="media">
@@ -154,7 +160,7 @@
 				</div>
 				
 				<div class="media">
-					<video class="foo" width="100%" autoplay loop>
+					<video class="foo" width="100%" autoplay loop controls>
 			    		<source src="imgs/menu.mp4" type="video/mp4">
 			  		</video>
 				</div>
@@ -163,7 +169,7 @@
 			</div>
 			
 			<div class="divider">
-					<video class="foo" width="100%" autoplay loop>
+					<video class="foo" width="100%" autoplay loop controls>
 			    		<source src="imgs/bio-cover.mp4" type="video/mp4">
 			  		</video>				
 				</div>
@@ -215,7 +221,7 @@
 				
 				
 				<div class="media">
-					<video class="foo" width="100%" autoplay loop>
+					<video class="foo" width="100%" autoplay loop controls>
 			    		<source src="imgs/escritos.mp4" type="video/mp4">
 			  		</video>
 				</div>
@@ -262,13 +268,13 @@
 				
 				
 				<div class="media">
-					<video class="foo" width="100%" autoplay loop>
+					<video class="foo" width="100%" autoplay loop controls>
 			    		<source src="imgs/mapa-v-1.mp4" type="video/mp4">
 			  		</video>
 				</div>
 				
 				<div class="media">
-					<video class="foo" width="100%" autoplay loop>
+					<video class="foo" width="100%" autoplay loop controls>
 			    		<source src="imgs/mapa-v-2.mp4" type="video/mp4">
 			  		</video>
 				</div>
@@ -339,7 +345,36 @@
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
     	<script  src="js/mouse.js"></script>
+<script>
+		
+		// Changing the defaults
+			window.sr = ScrollReveal({ reset: false });
 
+		// Customizing a reveal set
+			sr.reveal('.hed', 
+			
+			   {scale: 0,
+				duration: 600,
+				container: document.querySelector('.case'),
+				mobile: false, 
+				viewFactor: 0.2
+				
+		  },100);
+		
+		sr.reveal('.foo', 
+			
+			   {scale: 0,
+				origin: 'bottom',
+				distance: '35px',
+				duration: 600,
+				easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+				container: document.querySelector('.case'),
+				mobile: false,
+				useDelay: 'onload',
+				mobile: false, 
+				viewFactor: 0.02
+		  });
+	</script>
          <script>
 			 
 			 // Hide Header on on scroll down
@@ -383,36 +418,7 @@
 			 
 		</script>
 
-	<script>
-		
-		// Changing the defaults
-			window.sr = ScrollReveal({ reset: false });
-
-		// Customizing a reveal set
-			sr.reveal('.hed', 
-			
-			   {scale: 0,
-				duration: 600,
-				container: document.querySelector('.case'),
-				mobile: false, 
-				viewFactor: 0.2
-				
-		  },100);
-		
-		sr.reveal('.foo', 
-			
-			   {scale: 0,
-				origin: 'bottom',
-				distance: '35px',
-				duration: 600,
-				easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
-				container: document.querySelector('.case'),
-				mobile: false,
-				useDelay: 'onload',
-				mobile: false, 
-				viewFactor: 0.02
-		  });
-	</script>
+	
 	
 	<script>
 	
