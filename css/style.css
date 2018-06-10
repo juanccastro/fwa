@@ -184,7 +184,7 @@ nav h3:hover , footer h3:hover{
 }
 
 /* END OF GLOBAL STYLES */
-/* SIDEBAR HOVER STYLES */
+/* SIDEBAR HOVER STYLES 
  
 .sidebar-hover:hover ~ .sidebar-real .nav-elem {
   -webkit-transform: translateX(0);
@@ -233,7 +233,7 @@ nav h3:hover , footer h3:hover{
 .sidebar-hover:hover ~ .sections .content {
   -webkit-transform: translateX(30rem);
           transform: translateX(30rem);
-}
+}*/
 
 .pagination {
   /*
@@ -270,7 +270,7 @@ nav h3:hover , footer h3:hover{
   transition: max-width 0.4s 0.2s, transform 0.3s, -webkit-transform 0.3s;
   will-change: max-width, transform;
 }
- 
+ /*
 .sidebar-real:hover .nav-elem {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -318,7 +318,7 @@ nav h3:hover , footer h3:hover{
 .sidebar-real:hover ~ .sections .content {
   -webkit-transform: translateX(30rem);
           transform: translateX(30rem);
-}
+}*/
 
 .nav-elem {
   margin-top: 10%;
