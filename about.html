@@ -14,9 +14,7 @@
 	<link rel="manifest" href="imgs/favicon/site.webmanifest">
 	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="theme-color" content="#ffffff">
-	
-	<script src="js/barba.min.js" type="text/javascript"></script>
-	
+		
 	<meta name="description" content="Juan Castro is an Interactive Designer focused on Art Direction, Web Design, Motion Graphics and User Experience.">
 
 </head>
@@ -43,7 +41,7 @@
 <!-- <div id="pointer"></div>-->
 		     <div class="photo">
 				</div>
-		<div class=" case">
+		<div class="case">
  
 			<div class="about-title">
 					<h2 class="about-title hed">Don’t worry,<br> I’m sitting down so I’m being humble.
@@ -247,13 +245,56 @@
  
     	<script  src="js/mouse.js"></script>
     
-         <script>
-             function myFunction(){
-                 var copyText = document.getElementById("myInput");
-                 copyText.select();
-                 document.execCommand("copy");
-             }
-         </script>
+    <script>
+    		
+			var lastPosition = -100;
+
+$(document).ready(function() {
+    $('.main').height($('.case').height());
+
+    $(window).resize(function() {
+        $('.main').height($('.case').height());
+    });
+
+    
+});
+
+var scroll = window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    // IE Fallback, you can even fallback to onscroll
+    function(callback) {
+        window.setTimeout(callback, 1000 / 60)
+    };
+
+function loop() {
+
+    // Avoid calculations if not needed
+    if (lastPosition == $(".case").pageYOffset) {
+        scroll(loop);
+        return false;
+    } else lastPosition = $(".case").pageYOffset;
+  
+    var transform = 'translate3d(0px, -' + lastPosition + 'px, 0px)';
+    var smoothScoll = $(".case")[0];
+  
+    smoothScoll.style.webkitTransform = transform;
+    smoothScoll.style.mozTransform = transform;
+    smoothScoll.style.transform = transform;
+    
+  
+    scroll(loop)
+}
+
+// Call the loop for the first time
+loop();
+			 
+			 
+			 
+			 
+    </script>
 
 	<script>
 		
