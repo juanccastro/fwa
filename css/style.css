@@ -111,9 +111,19 @@ nav h3, footer h3, footer i{
 .foot,.sidebar-hover{
     z-index: 4;
 }
-footer .foot h3{
+
+.foot{
+	width: 10%;
+}
+.foot h3{
+
+	display: inline-block;
   font-weight: 200;
   opacity:1 !important;
+}
+
+.foot h3:nth-child(2){
+	margin-left: 55%;
 }
 
 .logo:nth-child(2){
