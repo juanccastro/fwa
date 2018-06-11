@@ -421,7 +421,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .section.section-3 .bg-part {
-  background-image: url("../imgs/tesla_design_studio_full.png");
+  background-image: url("../imgs/bg-tostitos.png");
 }
 
 .section.section-2 .bg-part {
@@ -432,25 +432,6 @@ nav h3:hover , footer h3:hover{
   background-image: url("../imgs/bg-project-4.png");
 }
 
-.section.section-1 .color {
-  background-color: #ffa6a6;
-  background-image: url("../imgs/bg-project-1.png");
-}
-
-.section.section-2 .color {
-  background-color: #a6eeff;
-  background-image: url("../imgs/bg-project-3.png");
-}
-
-.section.section-3 .color {
-  background-color: #ffc9a4;
-  background-image: url("../imgs/cards.png");
-}
-
-.section.section-4 .color {
-  background-color: #cba6ff;
-  background-image: url("../imgs/bg-project-4.png");
-}
 
 /*
 .section.section-5 .bg-part {
