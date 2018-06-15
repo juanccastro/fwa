@@ -369,18 +369,12 @@
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
     	<script  src="js/mouse.js"></script>
+        <script src="smooth-scrolling.js"></script>
+  
     	
     <script>
-        import Smooth from 'smooth-scrolling'
-
-        const section = document.querySelector('.vs-section')
-        const smooth = new Smooth({
-          native: true,
-          section: section,
-            ease: 0.1
-        }       )
-
-        smooth.init()
+       var scroll = new Smooth({ native: true, preload: true });
+        scroll.init();
     </script>
     
       
