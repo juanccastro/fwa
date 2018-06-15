@@ -413,7 +413,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .section {
-     perspective:800px;
+     perspective:8000px;
   z-index: 1;
   position: relative;
   height: 100%;
@@ -484,7 +484,7 @@ nav h3:hover , footer h3:hover{
   transition: transform 0.4s 0.2s;
   transition: transform 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
   will-change: transform;
- 
+   
 }
 
 .box{

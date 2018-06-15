@@ -274,28 +274,7 @@
     <script  src="js/mouse.js"></script>
 
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    
-    
-    <script>
-        document.addEventListener("mousemove", function(event){
-            
-            const x= event.pageX;
-            const y= event.pageY;
-            
-            const target= document.querySelector(".content");
-            const targetCoords = target.getBoundingClientRect();
-            
-            const targetX = targetCoords.left + target(target.offsetWidth/2);
-            const targetY = targetCoords.top + target(target.offsetHeight/2);
-            
-            const angleX = (targetY - y) /25;
-            const angleY = (targetX - x) /-25;
-            
-            target.style.transform = "rotateX(" + angleX + "deg) rotateY(" + angleY + "deg);"  
-            
-        });
-    
-    </script>
+     
     
 	 <script>
 
