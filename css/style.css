@@ -164,7 +164,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .main {
-  width: 100%;
+   width: 100%;
   height: 100vh;
   overflow: hidden;
 /*background: #e7e7e7;*/
@@ -408,12 +408,16 @@ nav h3:hover , footer h3:hover{
   -webkit-transition: margin 0.5s;
   transition: margin 0.5s;
   will-change: margin;
+     
+
 }
 
 .section {
+     perspective:800px;
   z-index: 1;
   position: relative;
   height: 100%;
+    
 }
 
 .section.section-1 .bg-part {
@@ -480,6 +484,7 @@ nav h3:hover , footer h3:hover{
   transition: transform 0.4s 0.2s;
   transition: transform 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
   will-change: transform;
+ 
 }
 
 .box{
@@ -655,7 +660,7 @@ li {
   height:60%;
   margin-left: 15%;
   overflow: hidden;
-}
+ }
 
 .bg-part:nth-child(1) {
   -webkit-transition-delay: 0.01s;
