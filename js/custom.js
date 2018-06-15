@@ -1,4 +1,4 @@
-import Smooth from 'smooth-index'
+import Smooth from 'sm-index'
 
 class Parallax extends Smooth {
     
