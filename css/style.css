@@ -813,7 +813,7 @@ li {
 
 /* 				CASE STUDIES				*/
 
-.case{
+.case, .vs-section{
 	overflow-y:scroll;
 	position: fixed;
 	width:100%;
