@@ -116,8 +116,7 @@ nav h3, footer h3, footer i{
 	width: 10%;
 }
 .foot h3{
-
-	display: inline-block;
+  display: inline-block;
   font-weight: 200;
   opacity:1 !important;
 }
