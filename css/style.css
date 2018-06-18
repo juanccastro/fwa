@@ -87,7 +87,8 @@ img{
     right: 0px;
 }
 
-
+.sidebar-hover{
+ }
 
 
 nav h3, footer h3, footer i{
@@ -270,7 +271,12 @@ nav h3:hover , footer h3:hover{
 }
 
 .pagination .page {
-	
+	font-size:2vw;
+     vertical-align: top;
+}
+
+.pagination .total-pages {
+	 vertical-align: top;
 }
 
 /* END OF SIDEBAR HOVER */
