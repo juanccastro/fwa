@@ -256,6 +256,8 @@ nav h3:hover , footer h3:hover{
 }*/
 
 .pagination {
+         vertical-align: top;
+
   /*
   &:before {
     content: "";
@@ -272,11 +274,11 @@ nav h3:hover , footer h3:hover{
 
 .pagination .page {
 	font-size:2vw;
-     vertical-align: top;
 }
 
 .pagination .total-pages {
-	 vertical-align: top;
+ 
+ 
 }
 
 /* END OF SIDEBAR HOVER */
@@ -1211,8 +1213,8 @@ header {
 
 .about{
       position: relative;
-    z-index: 2;
-	margin-left: 50%;
+      z-index: 2;
+	  margin-left: 40%;
 }
 
 .photo{
