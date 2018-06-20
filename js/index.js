@@ -73,6 +73,9 @@ $(document).ready(function() {
 	  if(curPage == 4){
 		  $scroller.css("margin-top", "-380px"); 
 	  }
+	  if(curPage == 5){
+		  $scroller.css("margin-top", "-510px"); 
+	  }
 	  
   }
   
