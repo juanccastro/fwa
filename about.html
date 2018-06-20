@@ -303,57 +303,6 @@
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
  
     	<script  src="js/mouse.js"></script>
-    
-    <script>
-    		
-			var lastPosition = -100;
-
-$(document).ready(function() {
-    $('.main').height($('.case').height());
-
-    $(window).resize(function() {
-        $('.main').height($('.case').height());
-    });
-
-    
-});
-
-var scroll = window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    window.msRequestAnimationFrame ||
-    window.oRequestAnimationFrame ||
-    // IE Fallback, you can even fallback to onscroll
-    function(callback) {
-        window.setTimeout(callback, 1000 / 60)
-    };
-
-function loop() {
-
-    // Avoid calculations if not needed
-    if (lastPosition == $(".case").pageYOffset) {
-        scroll(loop);
-        return false;
-    } else lastPosition = $(".case").pageYOffset;
-  
-    var transform = 'translate3d(0px, -' + lastPosition + 'px, 0px)';
-    var smoothScoll = $(".case")[0];
-  
-    smoothScoll.style.webkitTransform = transform;
-    smoothScoll.style.mozTransform = transform;
-    smoothScoll.style.transform = transform;
-    
-  
-    scroll(loop)
-}
-
-// Call the loop for the first time
-loop();
-			 
-			 
-			 
-			 
-    </script>
 
 	<script>
 		
