@@ -854,6 +854,39 @@ li {
   transform: scale(0.8);
 }
 
+/* 				ALL CASE STUDIES			*/
+
+.item{
+    display: inline-block;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    margin: 5%;
+    -webkit-clip-path: inset(0% 0%);
+    clip-path: inset(0% 0%);
+    transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
+}
+ 
+.item img{
+    z-index: 2;
+	transform: scale(1);
+	vertical-align: middle;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
+}
+
+.item:hover{
+	-webkit-clip-path: inset(50px 50px);
+	clip-path:inset(2% 2%);
+	transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
+}
+
+.item:hover img{
+	transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+	transition: all .5s cubic-bezier(.72,.16,.345,.875)!important;
+}
+
+
 /* 				CASE STUDIES				*/
 
 .case, .vs-section{
