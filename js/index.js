@@ -6,7 +6,7 @@ $(document).ready(function() {
       curPage = 1,
       pages = $(".section").length,
       $sections = $(".sections"),
-      $scroller = $("#scroller"),
+      $scroller = $(".sections #scroller"),
       $paginationPage = $(".pagination .page"),
       $paginationTotal = $(".total-pages"),
       $textStuff = $(".texts, .linea"),
