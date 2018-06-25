@@ -65,16 +65,16 @@ $(document).ready(function() {
 		  $scroller.css("margin-top", "0px"); 
 	  } 
 	  if(curPage == 2){
-		  $scroller.css("margin-top", "-130px"); 
+		  $scroller.css("margin-top", "-160px"); 
 	  }
 	  if(curPage == 3){
-		  $scroller.css("margin-top", "-260px"); 
+		  $scroller.css("margin-top", "-320px"); 
 	  }
 	  if(curPage == 4){
-		  $scroller.css("margin-top", "-380px"); 
+		  $scroller.css("margin-top", "-480px"); 
 	  }
 	  if(curPage == 5){
-		  $scroller.css("margin-top", "-510px"); 
+		  $scroller.css("margin-top", "-640px"); 
 	  }
 	  
   }
