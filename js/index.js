@@ -164,6 +164,48 @@ $(document).ready(function() {
   $up.on("click" , function() {
          navigateUp();
   });
+	
+	
+	$(document).on("click", ".dot:not(.active)", function() {
+    var activePage = parseInt($(".dot.active").attr("data-page"), 10),
+        futurePage = $(this).attr("data-page");
+    
+    pagination(futurePage);
+    
+    if (Math.abs(activePage - futurePage) > 2) {
+      var $fakePage = $(".section-" + futurePage).clone(),
+          $currentPage = $(".section-" + activePage),
+          fakeNumber = 0;
+      // ugly code, do not enter here
+      if (activePage < futurePage) {
+        // moving down
+        $currentPage.after($fakePage);
+        fakeNumber = activePage + 1;
+        $(".main").css("top");
+        randomDelay();
+        magicStuff(fakeNumber);
+      } else {
+        // moving up (real hell)
+        $currentPage.before($fakePage);
+        fakeNumber = activePage - 1;
+        trickyStuff(activePage + 1);
+        $(".main").css("top");
+        randomDelay();
+        $(".main").css("top");
+        magicStuff(activePage);
+      }
+      timeoutNav(2050);
+      setTimeout(function() {
+        $fakePage.remove();
+        trickyStuff(futurePage);
+      }, 2000);
+    } else {
+      magicStuff(futurePage);
+      timeoutNav();
+    }
+  });
+	
+	
   
   $(window).resize(function() {
     maxScroll = $navEl.length * $navEl.height() - $(window).height();
