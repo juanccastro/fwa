@@ -170,11 +170,11 @@ nav h3, footer h3, footer i{
  
 .logo:nth-child(2){
     color: #fafafa;
-	margin-left: 25%;
+	margin-left: 5%;
     opacity:1 !important;
 }
 .logo:nth-child(2) h3{
-    font-weight: 200;
+    font-weight: 400;
     opacity:0.5 !important;
 }
 
@@ -953,15 +953,14 @@ li {
      will-change: transform;
  }
 .case-main .case {
-    	background-color: #f1f1f1;
-
+    background-color: #f1f1f1;
 }
 
 .header{
 	width: 85%;
  	left: 0;
 	right: 0;
-	margin: auto;
+	margin: 0 auto;
 	margin-top: 15%;
 	margin-bottom: 8%;
 }
