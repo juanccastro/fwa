@@ -83,12 +83,22 @@ img{
     margin-top:-2%;
 }
 
-.menu,.sidebar-hover{
+.menu{
     right: 0px;
 }
 
 .sidebar-hover{
- }
+    font-family: "Avenir Next";
+	font-weight: 500;
+	vertical-align: middle;
+    letter-spacing: 1px;
+ 	font-size:0.8vw;
+    z-index: 2;
+	top: 35%;
+	margin: 0 auto;
+	left: 65%;
+	position:absolute;
+  }
 
 
 nav h3, footer h3, footer i{
@@ -126,6 +136,11 @@ nav h3, footer h3, footer i{
 	margin-left: 55%;
 }
 
+.foot:nth-child(2){
+	right: 0;
+    width: auto;
+}
+ 
 .logo:nth-child(2){
     color: #fafafa;
 	margin-left: 25%;
@@ -273,8 +288,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .pagination .page {
-	font-size:2vw;
-}
+ }
 
 .pagination .total-pages {
  
