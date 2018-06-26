@@ -11,6 +11,7 @@ $(document).ready(function() {
       $paginationTotal = $(".total-pages"),
       $textStuff = $(".texts, .linea"),
       $lines = $(".linea"),
+      $dot = $(".dot"),
  	  $names = $(".section-heading, .additional-text"),
  	  $up = $(".arrow-up"),
  	  $down = $(".arrow-down");
@@ -63,7 +64,7 @@ $(document).ready(function() {
 	  
 	  if(curPage == 1){
 		  $scroller.css("margin-top", "0px"); 
-	  } 
+ 	  } 
 	  if(curPage == 2){
 		  $scroller.css("margin-top", "-160px"); 
 	  }
@@ -90,7 +91,9 @@ $(document).ready(function() {
   
   function pagination(pg) {
     $(".nav-elem").removeClass("active");
+    $(".dot").removeClass("dot-active");
     $(".nav-" + pg).addClass("active");
+    $(".dot-" + pg).addClass("dot-active");
     curPage = pg;
     
     if (pages >= 10) {
