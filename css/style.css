@@ -540,6 +540,9 @@ li {
     -webkit-text-stroke: 1.2px #fafafa;
   text-stroke: 1.2px #fafafa;
     color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+
  }
 
 .all-text-list {
