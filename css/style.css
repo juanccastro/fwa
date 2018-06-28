@@ -102,8 +102,8 @@ img{
 
 .dot {
 	margin-left: 10%;
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
 	border-color: #fafafa;
 	border-style: solid;   
@@ -121,6 +121,8 @@ img{
 }
 
 .dot-active{
+	height: 10px;
+    width: 10px;
 	background-color: #fafafa;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -150,8 +152,9 @@ nav h3, footer h3, footer i{
 }
 
 .foot{
+	text-align: center;
 	width: 10%;
-}
+ }
 
 .foot h3{
   display: inline-block;
