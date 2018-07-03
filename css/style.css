@@ -173,12 +173,12 @@ nav h3, footer h3, footer i{
  
 .logo:nth-child(2){
     color: #fafafa;
-	margin-left: 5%;
+	margin-left: 8%;
     opacity:1 !important;
 }
 .logo:nth-child(2) h3{
     font-weight: 400;
-    opacity:0.5 !important;
+    opacity:1 !important;
 }
 
 a h3{
@@ -638,9 +638,9 @@ li {
 	margin: 0 auto;
 	left: 65%;
 	position:absolute;
-	height: 20px;
+	height: 24px;
   	overflow: hidden;
-  	width: 300px;
+  	width: 100px;
     color: #fafafa;
 }
 
@@ -712,9 +712,9 @@ li {
 	margin-top: 0em;
 	transition: 0.3s;     
     font-size: 1.3rem;
-    font-weight:700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    font-weight:400;
+    letter-spacing:1px;
+    text-transform: lowercase;
 	opacity: 1;
  }
 
@@ -1194,6 +1194,7 @@ header {
     font-weight:700;
 	letter-spacing: 5px;
     font-size:6vw;
+	color: white;
     -webkit-text-stroke: 1.2px white;
 	text-stroke: 1.2px white;
     	 -webkit-transition: all 0.5s ease;
