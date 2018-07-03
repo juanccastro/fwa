@@ -199,9 +199,11 @@
                <div class="container">
 					
 					<p class="next-case">Next</p>
-                    
-                    <h2 class="next-title">NOLA 300</h2>
+                    <a href="mil.html" style="text-decoration:none; color:#000000">
+
+                    <h2 class="next-title">Super Bowl Ad</h2>
                    
+					</a>
 					<p class="next-case">Website</p>
 				</div>
 				
@@ -250,86 +252,7 @@
 				viewFactor: 0.02
 		  });
 	</script>
-         <script>
-			 
-			 // Hide Header on on scroll down
-			 var didScroll;
-			 var lastScrollTop = 0;
-			 var delta = 5;
-			 var navbarHeight = $('header').outerHeight();
-			 
-			 $('.case').scroll(function(event){
-				 didScroll = true;
-			 });
-			 
-			 setInterval(function() {
-				 if (didScroll) {
-					 hasScrolled();
-					 didScroll = false;
-				 }
-			 }, 250);
-
-			 function hasScrolled() {
-				var st = $('.case').scrollTop();
-    
-				// Make sure they scroll more than delta
-				if(Math.abs(lastScrollTop - st) <= delta)
-					return;
-    
-    			// If they scrolled down and are past the navbar, add class .nav-up.
-    			// This is necessary so you never see what is "behind" the navbar.
-				if (st > lastScrollTop && st > navbarHeight){
-					// Scroll Down
-					$('header').removeClass('nav-down').addClass('nav-up');
-				} else {
-					// Scroll Up
-					if(st + $('.case').height() ) {
-						$('header').removeClass('nav-up').addClass('nav-down');
-					}
-				}
-    
-				lastScrollTop = st;
-			}
-			 
-		</script>
-
-	
-	
-	<script>
-	
-
-var $prog2 = $('.progress-indicator-2');
-function updateProgress(perc){
-    $prog2.css({width : perc*100 + '%'});
-}
-
-(function(){
-    var $w = $(window);
-    var $circ = $('.animated-circle');
-    var $progCount = $('.progress-count');
-    var $prog2 = $('.progress-indicator-2');
-    var wh = $w.height();
-    var h = $('.case').height();
-    var sHeight = h - wh;
-    $w.on('scroll', function(){
-        var perc = Math.max(0, Math.min(1, $w.scrollTop()/sHeight));
-        updateProgress(perc);
-    });
- 
-    function updateProgress(perc){
-        var circle_offset = 126 * perc;
-        $circ.css({
-            "stroke-dashoffset" : 126 - circle_offset
-        });
-        $progCount.html(Math.round(perc * 100) + "%");
- 
-        $prog2.css({width : perc*100 + '%'});
-    }
- 
-	}());
-		
-	
-	</script>
+         
 	<script>
 		window.addEventListener("beforeunload", function () {
   		document.body.classList.add("animate-out");
