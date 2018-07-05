@@ -80,7 +80,7 @@ img{
 	position: fixed;
 	width: 3%;
 	z-index: 2;
-    margin-top:-2%;
+    margin-top:-1%;
 }
 
 .menu{
@@ -115,14 +115,12 @@ img{
 }
 
 .dot:hover{
-	transform: scale(1.5);
-	-webkit-transition: all 0.5s ease;
+ 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
 .dot-active{
-	height: 10px;
-    width: 10px;
+	 
 	background-color: #fafafa;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -173,7 +171,7 @@ nav h3, footer h3, footer i{
  
 .logo:nth-child(2){
     color: #fafafa;
-	margin-left: 8%;
+	margin-left: 24%;
     opacity:1 !important;
 }
 .logo:nth-child(2) h3{
