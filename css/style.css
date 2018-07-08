@@ -136,7 +136,7 @@ nav h3, footer h3, footer i{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 	font-family: "Avenir Next";
-	font-weight: 500;
+	font-weight: 300;
 	vertical-align: middle;
     letter-spacing: 1px;
  	font-size:0.8vw;
@@ -709,7 +709,7 @@ li {
 	transition: 0.3s ease; 
 	margin-top: 0em;
 	transition: 0.3s;     
-    font-size: 1.3rem;
+ 	font-size:0.8vw;
     font-weight:400;
     letter-spacing:1px;
     text-transform: lowercase;
