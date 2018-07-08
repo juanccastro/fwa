@@ -1229,9 +1229,10 @@ header {
   position: fixed;
   top: 0; 
   bottom: 0;
-  background: rgba(13,13,13);
+  opacity: 1;
+  background-color: rgba(13,13,13);
   z-index : 5; 
-  transition: top 1s cubic-bezier(.86,0,.07,1) !important;
+  transition: all 1s cubic-bezier(.86,0,.07,1) !important;
 }
 
 .percentage {
