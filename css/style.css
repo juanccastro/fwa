@@ -1232,7 +1232,8 @@ header {
   opacity: 1;
   background-color: rgba(13,13,13);
   z-index : 5; 
-  transition: all 1s cubic-bezier(.86,0,.07,1) !important;
+  transition: all 1s ease !important;
+	cursor: wait;
 }
 
 .percentage {
