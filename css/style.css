@@ -708,8 +708,7 @@ li {
 .additional-text {
 	transition: 0.3s ease; 
 	margin-top: 0em;
-	transition: 0.3s;     
- 	font-size:0.8vw;
+  	font-size:0.8vw;
     font-weight:400;
     letter-spacing:1px;
     text-transform: lowercase;
@@ -717,7 +716,7 @@ li {
  }
 
 .up{
-	margin-top: 0.5em;
+	margin-top: 0.6em;
 	transition: all 0.8s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
 
@@ -1232,7 +1231,7 @@ header {
   opacity: 1;
   background-color: rgba(13,13,13);
   z-index : 5; 
-  transition: all 1s ease !important;
+  transition: all 2s ease !important;
 	cursor: wait;
 }
 
