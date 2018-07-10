@@ -1360,11 +1360,11 @@ header {
  }
 
 .about-title{
-	margin-left: 20%;
+	margin-left: 30%;
 	margin-top: 15%;
     z-index: 2;
     font-size: 4rem;
-	width: 50%;
+	width: 60%;
     line-height: 1.5;
     -webkit-text-stroke: 0.6px white;
 	text-stroke: 0.6px white;
