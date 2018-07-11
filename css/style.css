@@ -978,7 +978,7 @@ li {
 	font-family: 'Gentium Basic', serif;
     font-weight:700;
 	letter-spacing: 5px;
-   font-size:5vw;
+   font-size:8vw;
     line-height: 1.25;
 	width: 100%;
 }
@@ -1364,11 +1364,24 @@ header {
 	margin-top: 15%;
     z-index: 2;
     font-size: 4rem;
-	width: 60%;
     line-height: 1.5;
-    -webkit-text-stroke: 0.6px white;
-	text-stroke: 0.6px white;
+    -webkit-text-stroke: 0.9px white;
+	text-stroke: 0.9px white;
     color: rgb(0,0,0,0);
+}
+
+.vertical-text {
+	margin-top: 50%;
+	margin-left: 10%;
+	left: 0;
+	writing-mode: tb-rl;
+    font-family: 'Gentium Basic', serif;
+	position: absolute;
+	float:left;
+	font-size: 25rem;
+	transform-origin: left top 0;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
 }
 
 .svg{
