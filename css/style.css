@@ -80,7 +80,7 @@ img{
 	position: fixed;
 	width: 3%;
 	z-index: 2;
-    margin-top:-1%;
+    margin-top:-1.2%;
 }
 
 .menu{
@@ -94,21 +94,30 @@ img{
     letter-spacing: 1px;
  	font-size:0.8vw;
     z-index: 2;
-	top: 35%;
+	top: 70%;
 	margin: 0 auto;
-	left: 65%;
+	left: 45%;
 	position:absolute;
   }
 
-.dot {
-	margin-left: 10%;
+.dots{
+	margin-top: 25%;
+	margin-left: 8%;
+	position: absolute;
+	z-index: 2;
+	width: auto;
+	vertical-align: middle;
+ }
+
+.dot{
+	margin-top: 10px;
     height: 8px;
     width: 8px;
     border-radius: 50%;
 	border-color: #fafafa;
 	border-style: solid;   
 	border-width: 1px;
-	display: inline-block;
+	display: block;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	cursor: pointer;
@@ -120,7 +129,6 @@ img{
 }
 
 .dot-active{
-	 
 	background-color: #fafafa;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -136,7 +144,7 @@ nav h3, footer h3, footer i{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 	font-family: "Avenir Next";
-	font-weight: 300;
+	font-weight: 200;
 	vertical-align: middle;
     letter-spacing: 1px;
  	font-size:0.8vw;
@@ -152,6 +160,7 @@ nav h3, footer h3, footer i{
 .foot{
 	text-align: center;
 	width: 10%;
+	margin-left: 20%;
  }
 
 .foot h3{
@@ -166,12 +175,15 @@ nav h3, footer h3, footer i{
 }
 
 .foot:nth-child(2){
-	right: 0;
- }
+  }
+
+.fa{
+ 	opacity: 0.6;
+}
  
 .logo:nth-child(2){
     color: #fafafa;
-	margin-left: 24%;
+	margin-left: 22%;
     opacity:1 !important;
 }
 .logo:nth-child(2) h3{
@@ -315,6 +327,7 @@ nav h3:hover , footer h3:hover{
 }
 
 .pagination .page {
+	font-size:1.3vw;
  }
 
 .pagination .total-pages {
@@ -504,10 +517,10 @@ nav h3:hover , footer h3:hover{
 .left-part,
 .bg-part,
 .color {
-	opacity: 0.8;
+  opacity: 0.5;
   margin-top:18vh; 
   background-size: 70%;
-    background-position: 40% 50%;
+  background-position: 40% 50%;
   background-attachment: fixed;
   -webkit-transition: margin 1.3s cubic-bezier(.68,.01,.33,.99);
   transition: all 1.3s  cubic-bezier(.68,.01,.33,.99);
@@ -547,8 +560,8 @@ nav h3:hover , footer h3:hover{
  	z-index: 2;
 	position:absolute;
 	top: 45%;
-	margin: 0 auto;
-	width: 85%;
+	margin-left: 25%;
+ 	width: 80%;
 	height: 160px;
     overflow: hidden;
   }
@@ -569,8 +582,7 @@ li {
 .text-list {
 	position: absolute;
 	display: block;
-	right: 0;
-    font-size: 10vw;
+     font-size: 10vw;
     line-height: 1;
 	font-family: 'Gentium Basic', serif;
     font-weight:700;
@@ -632,9 +644,9 @@ li {
 
 .texts{
 	z-index: 2;
-	top: 75%;
+	top: 35%;
 	margin: 0 auto;
-	left: 65%;
+	left: 45%;
 	position:absolute;
 	height: 24px;
   	overflow: hidden;
@@ -711,8 +723,7 @@ li {
   	font-size:0.8vw;
     font-weight:400;
     letter-spacing:1px;
-    text-transform: lowercase;
-	opacity: 1;
+ 	opacity: 1;
  }
 
 .up{
@@ -721,7 +732,7 @@ li {
 }
 
 .down{
-	  margin-top: 2em;
+	  margin-top: 3em;
 	  transition: all 0.8s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
 
@@ -737,7 +748,7 @@ li {
 .bg-part {
   width: 3%;
   height:60%;
-  margin-left: 15%;
+  margin-left: 17%;
   overflow: hidden;
  }
 
