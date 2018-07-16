@@ -175,6 +175,7 @@ nav h3, footer h3, footer i{
 }
 
 .foot:nth-child(2){
+	right: 0;
   }
 
 .fa{
@@ -631,9 +632,9 @@ li {
          }
 
          #holder #scroll {
-         top: 0px;
-	right: 0px;
-	width: auto;
+         	top: 0px;
+			right: 0px;
+			width: auto;
         }
 
         #holder  #scroller li {
