@@ -1373,7 +1373,8 @@ header {
 }
 
 .vertical-text {
-	margin-top: 50%;
+	height: 2000px;
+ 	margin-top: 50%;
 	margin-left: 10%;
 	left: 0;
 	writing-mode: tb-rl;
