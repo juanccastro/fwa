@@ -553,21 +553,32 @@ nav h3:hover , footer h3:hover{
 	top: 45%;
 	margin-left: 25%;
  	width: 80%;
-	height: 160px;
-    overflow: hidden;
+	height: 260px;
+    
   }
 
 #scroller{
 	right: 0px;
 	width: auto;
     list-style:none;
-	-webkit-transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
-  	transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
+	-webkit-transition: all 2s cubic-bezier(0.7, 0.18, 0.15, 1);
+  	transition: all 2s cubic-bezier(0.7, 0.18, 0.15, 1);
  }
 
 li {
+    
    right: 0px;
-   height: 160px;
+   height: 700px;
+   opacity: 0;
+    -webkit-transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  	transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+}
+
+.li-active{
+    opacity: 1;
+    display: inherit;
+    -webkit-transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
+  	transition: all 1s cubic-bezier(0.7, 0.18, 0.15, 1);
 }
  
 .text-list {
@@ -586,7 +597,6 @@ li {
     color: #fafafa;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-
  }
 
 .all-text-list {

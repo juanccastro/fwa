@@ -64,18 +64,18 @@ $(document).ready(function() {
 	  
 	  if(curPage == 1){
 		  $scroller.css("margin-top", "0px"); 
- 	  } 
+  	  } 
 	  if(curPage == 2){
-		  $scroller.css("margin-top", "-160px"); 
-	  }
+		  $scroller.css("margin-top", "-700px");
+ 	  }
 	  if(curPage == 3){
-		  $scroller.css("margin-top", "-320px"); 
+		  $scroller.css("margin-top", "-1400px"); 
 	  }
 	  if(curPage == 4){
-		  $scroller.css("margin-top", "-480px"); 
+		  $scroller.css("margin-top", "-2100px"); 
 	  }
 	  if(curPage == 5){
-		  $scroller.css("margin-top", "-640px"); 
+		  $scroller.css("margin-top", "-2800px"); 
 	  }
 	  
   }
@@ -92,8 +92,10 @@ $(document).ready(function() {
   function pagination(pg) {
     $(".nav-elem").removeClass("active");
     $(".dot").removeClass("dot-active");
+    $(".tit").removeClass("li-active");
     $(".nav-" + pg).addClass("active");
     $(".dot-" + pg).addClass("dot-active");
+    $(".tit-" + pg).addClass("li-active");
     curPage = pg;
     
     if (pages >= 10) {
