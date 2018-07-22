@@ -673,6 +673,7 @@ li {
   	-webkit-transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
   	transition: all 1.3s cubic-bezier(0.7, 0.18, 0.15, 1);
   	will-change: transform, opacity;
+	  opacity: 1;
 }
 
 .section-heading.not-visible,
