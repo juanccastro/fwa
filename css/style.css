@@ -639,9 +639,9 @@ li {
 	margin: 0 auto;
 	left: 45%;
 	position:absolute;
-	height: 24px;
+	height: 25px;
   	overflow: hidden;
-  	width: 100px;
+  	width: 500px;
     color: #fafafa;
 }
 
