@@ -739,9 +739,10 @@ li {
  }
 
 .bg-part {
+	margin: 0 auto;
   width: 3%;
   height:60%;
-  margin-left: 17%;
+  margin-left: 30%;
   overflow: hidden;
  }
 
