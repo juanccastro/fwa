@@ -332,12 +332,16 @@
 
          $(".text-list").mouseover(function() {
             $( ".up" ).css( "margin-top","-3em");
+            $( ".up" ).css( "opacity","0");
             $( ".down" ).css( "margin-top","0.6em");
+			$( ".down" ).css( "opacity","1");
          });
 
         $(".text-list").mouseout(function() {
-             $( ".up" ).css( "margin-top","0.6em" );
-            $( ".down" ).css( "margin-top","3em" );
+            $( ".up" ).css( "margin-top","0.6em" );
+			$( ".up" ).css( "opacity","1");
+            $( ".down" ).css( "margin-top","3em");
+			$( ".down" ).css( "opacity","0");
          });
     
         </script>
