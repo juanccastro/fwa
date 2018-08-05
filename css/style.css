@@ -1421,11 +1421,10 @@ header {
 }
 
 .margen{
-	margin-top: 30%;
+	margin-top: 15%;
  }
 .margenD{
-    margin-top: 10%;
- }
+  }
 .container-about{
     position: absolute;
     z-index: 2;
@@ -1445,7 +1444,7 @@ header {
 }
 
 .vertical-text {
-	height: 2000px;
+	height: 1700px;
  	margin-top: 50%;
 	margin-left: 10%;
 	left: 0;
@@ -1460,6 +1459,7 @@ header {
 }
 
 .svg{
+	position: absolute;
 	-webkit-animation:spin 12s linear infinite;
     -moz-animation:spin 12s linear infinite;
     animation:spin 12s linear infinite;
