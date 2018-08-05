@@ -1433,7 +1433,7 @@ header {
  }
 
 .about-title{
-	margin-left: 30%;
+	margin-left: 28%;
 	margin-top: 15%;
     z-index: 2;
     font-size: 4rem;
@@ -1460,9 +1460,9 @@ header {
 
 .svg{
 	position: absolute;
-	-webkit-animation:spin 12s linear infinite;
-    -moz-animation:spin 12s linear infinite;
-    animation:spin 12s linear infinite;
+	-webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
