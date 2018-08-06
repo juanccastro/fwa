@@ -23,7 +23,13 @@ html, body {
 	  overflow: hidden;
 }
 
-  
+.noise{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+}  
+
 nav{
 	z-index: 3;
 	width: 85%;
@@ -155,9 +161,11 @@ nav h3, footer h3, footer i{
 	width: 10%;
   }
 
+
+
 .foot h3{
   display: inline-block;
-  font-weight: 200;
+  font-weight: 300;
   opacity:1 !important;
  	height: auto;
 }
