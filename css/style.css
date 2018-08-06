@@ -136,11 +136,11 @@ nav h3, footer h3, footer i{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 	font-family: "Avenir Next";
-	font-weight: 200;
+	font-weight: 300;
 	vertical-align: middle;
     letter-spacing: 1px;
 /* 	font-size:0.8vw;*/
-    font-size: 10px;
+    font-size: 12px;
 	opacity: 1;
     height: 50%;
 	-webkit-transition: all 0.5s ease;
@@ -1416,7 +1416,7 @@ header {
 	position: absolute;
 	overflow: hidden;
 	background-image: url(../imgs/foto3.png);
-	background-size: 120%;
+	background-size: 100%;
 	background-position: 50% 90%;
 }
 
