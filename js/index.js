@@ -91,7 +91,7 @@ $(document).ready(function() {
   
   function pagination(pg) {
     $(".nav-elem").removeClass("active");
-    $(".dot").removeClass("dot-active");
+    $(".cont-dot").removeClass("dot-active");
     $(".tit").removeClass("li-active");
     $(".nav-" + pg).addClass("active");
     $(".dot-" + pg).addClass("dot-active");
@@ -168,8 +168,8 @@ $(document).ready(function() {
   });
 	
 	
-	$(document).on("click", ".dot:not(.active)", function() {
-    var activePage = parseInt($(".dot.active").attr("data-page"), 10),
+	$(document).on("click", ".cont-dot:not(.active)", function() {
+    var activePage = parseInt($(".cont-dot.active").attr("data-page"), 10),
         futurePage = $(this).attr("data-page");
     
     pagination(futurePage);
@@ -208,6 +208,23 @@ $(document).ready(function() {
   });
 	
 	
+	/*
+  
+  	var i = 0, timeOut = 0;
+  
+  $('.main').on('mousedown touchstart', function(e) {
+	$(".sections #scroller li").css("height", "200px"); 
+	$(".sections #scroller li").css("opacity", 1); 
+    timeOut = setInterval(function(){
+      console.log(i++);
+    }, 100);
+  }).bind('mouseup mouseleave touchend', function() {
+    $scroller.removeClass('li-active');
+    $(".sections #scroller li").css("height", "700px"); 
+	$(".sections #scroller li").css("opacity", 0); 
+    clearInterval(timeOut);
+  });
+*/
   
   $(window).resize(function() {
     maxScroll = $navEl.length * $navEl.height() - $(window).height();

@@ -91,7 +91,7 @@ img{
   }
 
 .dots{
-	margin-top: 25%;
+	margin-top: 24%;
 	margin-left: 8%;
 	position: absolute;
 	z-index: 2;
@@ -99,27 +99,37 @@ img{
 	vertical-align: middle;
  }
 
+.cont-dot{
+	align-items: center;
+	padding: 8px;
+	margin-bottom: 6px;
+	display: flex;
+	cursor: pointer;
+	line-height: .5em;
+	
+}
+
 .dot{
-	margin-top: 12px;
-    height: 2px;
-    width: 6px;
+    height: 1px;
+    width: 14px;
 	opacity: 0.5;
 /*  border-radius: 50%;*/
 	background-color: #fafafa;
-	display: block;
+	display: inline-block;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-	cursor: pointer;
+    margin-right: 20px;
+	
 }
 
-.dot:hover{
-	width: 12px;
+.cont-dot:hover .dot{
+	width: 22px;
  	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
-.dot-active{
-	width: 12px;
+.dot-active .dot{
+	width: 22px;
 	opacity: 1;
 	background-color: #fafafa;
 	-webkit-transition: all 0.5s ease;
@@ -568,7 +578,6 @@ nav h3:hover , footer h3:hover{
  }
 
 li {
-    
    right: 0px;
    height: 700px;
    opacity: 0;
@@ -1454,7 +1463,8 @@ header {
 	float:left;
 	font-size: 25rem;
 	transform-origin: left top 0;
- 
+/*	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);*/
 }
 
 .svg{
