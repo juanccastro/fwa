@@ -102,11 +102,9 @@ img{
 .cont-dot{
 	align-items: center;
 	padding: 8px;
-	margin-bottom: 6px;
-	display: flex;
+ 	display: flex;
 	cursor: pointer;
 	line-height: .5em;
-	
 }
 
 .dot{
